@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schema/template_meta.schema.json
+
+channels:
+  schedule: 1276966008615075924
+  events: 1276966040319823933
+  introduction: 1276966074021187585
+  general: 1276966118359306310
+  forum: 1022659495710695504
+
+default_timezone: Asia/Tokyo
+
+language_info:
+  abbreviation: JSL
+  native_localization: ja
+  localized_name:
+    en: Japanese Sign Language
+    ja: 日本手話

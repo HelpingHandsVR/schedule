@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schema/template_events.schema.json
+
+events:
+  # Monday
+  - host: Korea_Yujin
+    name: "KSL Class"
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-10
+      day: Monday
+      hour: 4
+      minute: 30

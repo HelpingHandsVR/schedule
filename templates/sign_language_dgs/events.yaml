@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schema/template_events.schema.json
+
+events:
+  # Saturday
+  - host: deaf_danielo_89
+    name: "DGS Class"
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-15
+      day: Saturday
+      hour: 23
+      minute: 0

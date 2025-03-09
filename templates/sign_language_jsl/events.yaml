@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schema/template_events.schema.json
+
+events:
+  # Sunday
+  - host: ラファエルRafael
+    name: "JSL Class"
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-09
+      day: Sunday
+      hour: 10
+      minute: 0

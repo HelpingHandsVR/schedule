@@ -1,0 +1,81 @@
+{
+    "type": "object",
+    "properties": {
+        "events": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/event"
+            }
+        }
+    },
+    "additionalProperties": false,
+    "$defs": {
+        "event": {
+            "type": "object",
+            "properties": {
+                "host": {
+                    "type": "string",
+                    "description": "Name of whoever is hosting this event."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The 'human name' of this event"
+                },
+                "tags": {
+                    "type": "array",
+                    "description": "Tags applicable to this event.",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "schedule": {
+                    "type": "object",
+                    "properties": {
+                        "timezone": {
+                            "type": "string",
+                            "description": "The timezone of the host for this event.",
+                            "pattern": "^[a-zA-Z]+/[a-zA-Z0-9_+-]+$"
+                        },
+                        "basis": {
+                            "type": "string",
+                            "description": "Represents a date (in the host's timezone) in which this event is known to occur. This allows events that occur e.g. every other week to know which weeks they are happening on.",
+                            "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+                        },
+                        "day": {
+                            "$ref": "#/$defs/day"
+                        },
+                        "hour": {
+                            "type": "number",
+                            "description": "Hour this event starts in 24 hour time",
+                            "minimum": 0,
+                            "maximum": 23
+                        },
+                        "minute": {
+                            "type": "number",
+                            "description": "Minute this event starts",
+                            "minimum": 0,
+                            "maximum": 59
+                        },
+                        "interval": {
+                            "type": "number",
+                            "description": "Amount of days between events occurring. Defaults to 7 if not provided."
+                        }
+                    },
+                    "required": [ "basis", "day", "hour", "minute" ]
+                }
+            },
+            "required": [ "host", "name", "tags", "schedule" ]
+        },
+        "day": {
+            "enum": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ]
+        }
+    }
+}

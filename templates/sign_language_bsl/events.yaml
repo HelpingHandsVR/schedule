@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schema/template_events.schema.json
+
+events:
+  # Saturday
+  - host: AvinouSCAC
+    name: "BSL Class"
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-15
+      day: Saturday
+      hour: 22
+      minute: 0

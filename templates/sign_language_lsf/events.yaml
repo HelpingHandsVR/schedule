@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schema/template_events.schema.json
+
+events:
+  # Tuesday
+  - host: XKaijo
+    name: "LSF Basic Class"
+    tags: ["class", "beginners"]
+    schedule:
+      basis: 2025-03-11
+      day: Tuesday
+      hour: 21
+      minute: 30
+
+  # Wednesday
+  - host: XKaijo
+    name: "LSF Class"
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-12
+      day: Wednesday
+      hour: 21
+      minute: 30
+
+  # Friday
+  - host: XKaijo
+    name: "LSF Class"
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-14
+      day: Friday
+      hour: 21
+      minute: 30
+
+  # Sunday
+  - host: XKaijo
+    name: "LSF Game Night"
+    tags: ["game_night"]
+    schedule:
+      basis: 2025-03-09
+      day: Sunday
+      hour: 21
+      minute: 30

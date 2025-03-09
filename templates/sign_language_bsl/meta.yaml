@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schema/template_meta.schema.json
+
+channels:
+  schedule: 1276965398805479489
+  events: 1276965454887518331
+  introduction: 1276965498726125608
+  general: 1276965531471183962
+  forum: 1022658803184959488
+
+default_timezone: Europe/London
+
+language_info:
+  abbreviation: BSL
+  native_localization: en
+  localized_name:
+    en: British Sign Language

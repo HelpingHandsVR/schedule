@@ -1,0 +1,62 @@
+{
+    "type": "object",
+    "properties": {
+        "channels": {
+            "type": "object",
+            "properties": {
+                "schedule": {
+                    "type": "number",
+                    "description": "The Discord channel ID of the schedule channel for this template",
+                    "minimum": 499435275844321280
+                },
+                "events": {
+                    "type": "number",
+                    "description": "The Discord channel ID of the events channel for this template",
+                    "minimum": 499435275844321280
+                },
+                "introduction": {
+                    "type": "number",
+                    "description": "The Discord channel ID of the introductions channel for this template",
+                    "minimum": 499435275844321280
+                },
+                "general": {
+                    "type": "number",
+                    "description": "The Discord channel ID of the general (normal chat) channel for this template",
+                    "minimum": 499435275844321280
+                },
+                "forum": {
+                    "type": "number",
+                    "description": "The Discord channel ID of the forum channel for this template",
+                    "minimum": 499435275844321280
+                }
+            }
+        },
+        "default_timezone": {
+            "type": "string",
+            "description": "The default timezone to use for this template in IANA (Region/Zone) format."
+        },
+        "language_info": {
+            "type": "object",
+            "properties": {
+                "abbreviation": {
+                    "type": "string",
+                    "description": "How this language is abbreviated e.g. ASL"
+                },
+                "native_localization": {
+                    "type": "string",
+                    "description": "The ISO code of the language considered the 'native written language' associated with this template, e.g. en"
+                },
+                "localized_name": {
+                    "type": "object",
+                    "patternProperties": {
+                        "[a-z]{2}": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            }
+        }
+    },
+    "required": ["channels", "default_timezone"]
+}

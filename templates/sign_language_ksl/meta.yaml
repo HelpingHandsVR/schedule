@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schema/template_meta.schema.json
+
+channels:
+  schedule: 1276966404301652081
+  events: 1276966478020612171
+  introduction: 1276966523210170459
+  general: 1276966561407828072
+  forum: 1022659259919503420
+
+default_timezone: Asia/Seoul
+
+language_info:
+  abbreviation: KSL
+  native_localization: ko
+  localized_name:
+    en: Korean Sign Language
+    ko: 한국 수화 언어

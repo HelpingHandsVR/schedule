@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        // Without this VSCode keeps interpreting all my templates as Helm charts >:(
+        "*.yaml": "yaml"
+    }
+}

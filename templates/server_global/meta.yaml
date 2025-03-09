@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../../schema/template_meta.schema.json
+
+channels:
+  schedule: 771111584574603284
+  events: 610999109910003722
+  introduction: 552838791656636423
+  general: 499435275844321282
+  forum: 1085681642091315230

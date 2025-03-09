@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=../../schema/template_events.schema.json
+
+events:
+  # Monday
+  - host: Amarante
+    name: ASL Class (East)
+    tags: ["sign_zone"]
+    schedule:
+      basis: 2025-03-17
+      day: Monday
+      hour: 15
+      minute: 0
+      interval: 14
+
+  - host: Amarante
+    name: ASL Sign Zone
+    tags: ["sign_zone"]
+    schedule:
+      basis: 2025-03-10
+      day: Monday
+      hour: 15
+      minute: 0
+
+  # Tuesday
+  - host: Ray_is_Deaf
+    name: ASL Class
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-11
+      day: Tuesday
+      hour: 14
+      minute: 0
+
+  # Thursday
+  - host: ShadeAxas
+    name: ASL Sign Zone
+    tags: ["sign_zone"]
+    schedule:
+      timezone: America/Chicago
+      basis: 2025-03-13
+      day: Thursday
+      hour: 20
+      minute: 0
+
+  # Friday
+  - host: DmTheMechanic
+    name: ASL Class
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-14
+      day: Thursday
+      hour: 17
+      minute: 0
+
+  - host: Chris
+    name: ASL Game Night
+    tags: ["game_night"]
+    schedule:
+      timezone: America/Chicago
+      basis: 2025-03-14
+      day: Thursday
+      hour: 20
+      minute: 0
+
+  # Saturday
+  - host: Crow_Se7en
+    name: ASL Class
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-15
+      day: Saturday
+      hour: 19
+      minute: 30
+
+  - host: Undeadsee
+    name: ASL Sign Zone
+    tags: ["sign_zone"]
+    schedule:
+      timezone: Australia/Brisbane
+      basis: 2025-03-15
+      day: Saturday
+      hour: 10
+      minute: 0
+
+  # Sunday
+  - host: Amarante
+    name: ASL Class (West)
+    tags: ["class"]
+    schedule:
+      basis: 2025-03-09
+      day: Sunday
+      hour: 17
+      minute: 0
+      interval: 14
