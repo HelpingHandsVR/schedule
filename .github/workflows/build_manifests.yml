@@ -40,6 +40,7 @@ jobs:
           git clean -dfx
 
           # Switch branches to deploy
+          git fetch origin deploy
           git checkout deploy
 
           # If the last commit was by GitHub Actions, revert it
