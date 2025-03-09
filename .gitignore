@@ -169,3 +169,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Output of the generation - it should not be checked in on this branch
+/output

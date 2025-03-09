@@ -6,3 +6,5 @@ channels:
   introduction: 552838791656636423
   general: 499435275844321282
   forum: 1085681642091315230
+
+default_timezone: America/New_York

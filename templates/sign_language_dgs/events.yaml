@@ -6,7 +6,7 @@ events:
     name: "DGS Class"
     tags: ["class"]
     schedule:
-      basis: 2025-03-15
+      basis: "2025-03-15"
       day: Saturday
       hour: 23
       minute: 0

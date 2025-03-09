@@ -6,7 +6,7 @@ events:
     name: "LSF Basic Class"
     tags: ["class", "beginners"]
     schedule:
-      basis: 2025-03-11
+      basis: "2025-03-11"
       day: Tuesday
       hour: 21
       minute: 30
@@ -16,7 +16,7 @@ events:
     name: "LSF Class"
     tags: ["class"]
     schedule:
-      basis: 2025-03-12
+      basis: "2025-03-12"
       day: Wednesday
       hour: 21
       minute: 30
@@ -26,7 +26,7 @@ events:
     name: "LSF Class"
     tags: ["class"]
     schedule:
-      basis: 2025-03-14
+      basis: "2025-03-14"
       day: Friday
       hour: 21
       minute: 30
@@ -36,7 +36,7 @@ events:
     name: "LSF Game Night"
     tags: ["game_night"]
     schedule:
-      basis: 2025-03-09
+      basis: "2025-03-09"
       day: Sunday
       hour: 21
       minute: 30
