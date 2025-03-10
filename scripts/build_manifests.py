@@ -213,8 +213,25 @@ def generate_old_format() -> dict:
         for event in event_lane.events:
             next_occurrence = event.next_occurrence_after(now)
 
+            # ID is generated off the basis timestamp - this should at least make it unique for different times,
+            #  but if two events occur at the exact same time, we can't rely on it being enough.
+            # Because events are rarely not on 15-minute intervals (900 seconds), we can multiply the timestamp
+            #  by 20 for ~18000 typically unused value blocks (enough to fit 14 bits) and then use the ASCII code
+            #  of the first two letters of the host name (given one host is unlikely to host two events at the
+            #  same time).
+            # This is suitably clash-resistant for 99% of cases, but maybe I'll think of a better solution in
+            #  the future.
+            # It's also OK to represent this as a pure integer because despite JavaScript using 64-bit floating
+            #  numbers for all numeric values, the mantissa is large enough that this won't cause problems
+            #  within the next few hundred years or so.
+            event_id = (
+                int(event.basis.timestamp()) * 20 +
+                (ord(event.host[0]) << 7) +
+                ord(event.host[1])
+            )
+
             manifest.append({
-                "id": int(event.basis.timestamp()),
+                "id": event_id,
                 "language": event_lane.meta['language_info']['abbreviation'],
                 "presenter": event.host,
                 "location": "unknown",
