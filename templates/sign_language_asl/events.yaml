@@ -21,16 +21,6 @@ events:
       hour: 15
       minute: 0
 
-  # Tuesday
-  - host: Ray_is_Deaf
-    name: ASL Class
-    tags: ["class"]
-    schedule:
-      basis: "2025-03-11"
-      day: Tuesday
-      hour: 14
-      minute: 0
-
   # Thursday
   - host: ShadeAxas
     name: ASL Sign Zone
