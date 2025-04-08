@@ -12,3 +12,4 @@ default_timezone: America/New_York
 webhook:
   channel: schedule
   url: GLOBAL_SCHEDULE_WEBHOOK_URL
+  message_id: 1359291126225309726

@@ -18,3 +18,4 @@ language_info:
 webhook:
   channel: schedule
   url: ASL_SCHEDULE_WEBHOOK_URL
+  message_id: 1359291124556239070

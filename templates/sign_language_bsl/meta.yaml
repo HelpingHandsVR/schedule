@@ -18,3 +18,4 @@ language_info:
 webhook:
   channel: schedule
   url: BSL_SCHEDULE_WEBHOOK_URL
+  message_id: 1359291127009906770
