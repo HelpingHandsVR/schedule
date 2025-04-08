@@ -77,7 +77,7 @@ TIMEZONE_PAIRS = (
     ("UN", datetime.UTC),
     ("GB", ZoneInfo("Europe/London")),
     ("FR", ZoneInfo("Europe/Paris")),
-    ("AU", ZoneInfo("Australia/Perth")),
+    ("AU", ZoneInfo("Australia/Sydney")),
     ("KR", ZoneInfo("Asia/Seoul")),
 )
 
