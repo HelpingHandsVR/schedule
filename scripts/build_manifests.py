@@ -5,11 +5,9 @@ Manifest build script.
 """
 
 import contextlib
-import dataclasses
 import datetime
 import json
 import pathlib
-import typing
 from zoneinfo import ZoneInfo
 
 import click
@@ -20,74 +18,14 @@ try:
 except ImportError:
     from yaml import Loader
 
+from definitions import EventLane, EventLaneEvent, EventLaneMeta, EventLaneRawEvents
+from formats.old import generate_old_format
+
 
 SCRIPTS_FOLDER = pathlib.Path(__file__).parent
 SCHEMA_FOLDER = SCRIPTS_FOLDER.parent / 'schema'
 TEMPLATES_FOLDER = SCRIPTS_FOLDER.parent / 'templates'
 OUTPUT_FOLDER = SCRIPTS_FOLDER.parent / 'output'
-
-
-class EventLaneLanguageInfo(typing.TypedDict):
-    abbreviation: str
-    native_localization: str
-    localized_name: dict[str, str]
-
-
-class EventLaneMeta(typing.TypedDict):
-    default_timezone: str
-    language_info: typing.NotRequired[EventLaneLanguageInfo]
-
-
-class EventLaneRawEventSchedule(typing.TypedDict):
-    timezone: typing.NotRequired[str]
-    basis: str
-    day: typing.Literal["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    hour: int
-    minute: int
-    interval: typing.NotRequired[int]
-
-
-class EventLaneRawEvent(typing.TypedDict):
-    host: str
-    name: str
-    tags: list[str]
-    schedule: EventLaneRawEventSchedule
-
-
-class EventLaneRawEvents(typing.TypedDict):
-    events: list[EventLaneRawEvent]
-
-
-@dataclasses.dataclass
-class EventLaneEvent:
-    host: str
-    name: str
-    tags: list[str]
-    basis: datetime.datetime
-    timezone: str
-    interval: int
-
-    def next_occurrence_after(self, target: datetime.datetime):
-        # Calculate the amount of days that have passed since the basis
-        days_since_basis = (target - self.basis).days
-        # Start search from floored interval from basis
-        starting_day_offset = int(days_since_basis / self.interval) * self.interval
-        needle = self.basis + datetime.timedelta(days=starting_day_offset)
-
-        while needle < target:
-            needle += datetime.timedelta(days=self.interval)
-
-        return needle
-
-
-@dataclasses.dataclass
-class EventLane:
-    name: str
-    meta: EventLaneMeta
-    events: list[EventLaneEvent]
-
-
-EVENT_LANES: list[EventLane] = []
 
 
 @contextlib.contextmanager
@@ -115,6 +53,8 @@ def main():
             events_schema = json.load(fp)
 
     click.secho("Reading event lane templates...", fg='blue')
+
+    event_lanes: list[EventLane] = []
 
     for meta_path in TEMPLATES_FOLDER.glob("*/meta.yaml"):
         event_lane_name = meta_path.parent.name
@@ -172,7 +112,7 @@ def main():
             events=events
         )
 
-        EVENT_LANES.append(event_lane)
+        event_lanes.append(event_lane)
 
     OUTPUT_FORMATS = (
         (generate_old_format, "old.json"),
@@ -184,75 +124,10 @@ def main():
 
     for callback, target_filename in OUTPUT_FORMATS:
         with report_error(f"    Generating {target_filename}"):
-            output = callback()
+            output = callback(event_lanes)
 
             with open(OUTPUT_FOLDER / target_filename, 'w', encoding='utf-8') as fp:
                 json.dump(output, fp, indent=2)
-
-
-OLD_DISPLAY_TIMEZONES = [
-    {"alpha2": "US", "alpha3": "USA", "territory": "United States", "iana": "America/Los_Angeles"},
-    {"alpha2": "US", "alpha3": "USA", "territory": "United States", "iana": "America/Chicago"},
-    {"alpha2": "US", "alpha3": "USA", "territory": "United States", "iana": "America/New_York"},
-    {"alpha2": "GB", "alpha3": "GBR", "territory": "United Kingdom", "iana": "Europe/London"},
-    {"alpha2": "FR", "alpha3": "FRA", "territory": "France", "iana": "Europe/Paris"},
-    {"alpha2": "RU", "alpha3": "RUS", "territory": "Russia", "iana": "Europe/Moscow"},
-    {"alpha2": "AU", "alpha3": "AUS", "territory": "Australia", "iana": "Australia/Perth"},
-    {"alpha2": "KR", "alpha3": "KOR", "territory": "Republic of Korea", "iana": "Asia/Seoul"},
-]
-
-for OLD_TZ in OLD_DISPLAY_TIMEZONES:
-    OLD_TZ["tz"] = ZoneInfo(OLD_TZ["iana"])
-
-
-def generate_old_format() -> dict:
-    now = datetime.datetime.now(datetime.UTC)
-    manifest = []
-
-    for event_lane in EVENT_LANES:
-        for event in event_lane.events:
-            next_occurrence = event.next_occurrence_after(now)
-
-            # ID is generated off the basis timestamp - this should at least make it unique for different times,
-            #  but if two events occur at the exact same time, we can't rely on it being enough.
-            # Because events are rarely not on 15-minute intervals (900 seconds), we can multiply the timestamp
-            #  by 20 for ~18000 typically unused value blocks (enough to fit 14 bits) and then use the ASCII code
-            #  of the first two letters of the host name (given one host is unlikely to host two events at the
-            #  same time).
-            # This is suitably clash-resistant for 99% of cases, but maybe I'll think of a better solution in
-            #  the future.
-            # It's also OK to represent this as a pure integer because despite JavaScript using 64-bit floating
-            #  numbers for all numeric values, the mantissa is large enough that this won't cause problems
-            #  within the next few hundred years or so.
-            event_id = (
-                int(event.basis.timestamp()) * 20 +
-                (ord(event.host[0]) << 7) +
-                ord(event.host[1])
-            )
-
-            manifest.append({
-                "id": event_id,
-                "language": event_lane.meta['language_info']['abbreviation'],
-                "presenter": event.host,
-                "location": "unknown",
-                "timestamp": str(int(next_occurrence.timestamp() * 1000)),
-                "time_until": str(int((next_occurrence - now).total_seconds() * 1000)),
-                "root_timezone": event.timezone,
-                "timezones": [
-                    {
-                        "iana": display_tz['iana'],
-                        "alpha2": display_tz['alpha2'],
-                        "alpha3": display_tz['alpha3'],
-                        "territory": display_tz['territory'],
-                        "text": f"{next_occurrence.astimezone(display_tz['tz']).strftime('%A %I:%M %p')} {next_occurrence.astimezone(display_tz['tz']).tzname()}"
-                    }
-                    for display_tz in OLD_DISPLAY_TIMEZONES
-                ]
-            })
-
-    manifest.sort(key=lambda event: int(event['time_until']))
-
-    return manifest
 
 
 if __name__ == '__main__':
