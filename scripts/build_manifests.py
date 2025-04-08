@@ -7,10 +7,12 @@ Manifest build script.
 import contextlib
 import datetime
 import json
+import os
 import pathlib
 from zoneinfo import ZoneInfo
 
 import click
+import discord
 import jsonschema
 from yaml import load
 try:
@@ -20,6 +22,7 @@ except ImportError:
 
 from definitions import EventLane, EventLaneEvent, EventLaneMeta, EventLaneRawEvents
 from formats.old import generate_old_format
+from formats.webhook import send_webhooks
 
 
 SCRIPTS_FOLDER = pathlib.Path(__file__).parent
@@ -106,16 +109,30 @@ def main():
                     interval=raw_event['schedule'].get('interval', None) or 7
                 ))
 
+        with report_error("    Resolving webhook if present"):
+            webhook = None
+            webhook_message_id = None
+
+            if meta_data.get('webhook', None) is not None:
+                webhook_url = os.getenv(meta_data['webhook']['url'])
+                webhook_message_id = meta_data['webhook'].get('message_id', None)
+
+                if webhook_url:
+                    webhook = discord.SyncWebhook.from_url(webhook_url)
+
         event_lane = EventLane(
             name=event_lane_name,
             meta=meta_data,
-            events=events
+            events=events,
+            webhook=webhook,
+            webhook_message_id=webhook_message_id,
         )
 
         event_lanes.append(event_lane)
 
     OUTPUT_FORMATS = (
         (generate_old_format, "old.json"),
+        (send_webhooks, "webhook.json"),
     )
 
     click.secho("Generating output formats...", fg='blue')

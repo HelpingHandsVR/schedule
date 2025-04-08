@@ -8,3 +8,7 @@ channels:
   forum: 1085681642091315230
 
 default_timezone: America/New_York
+
+webhook:
+  channel: schedule
+  url: GLOBAL_SCHEDULE_WEBHOOK_URL

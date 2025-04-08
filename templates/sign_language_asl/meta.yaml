@@ -14,3 +14,7 @@ language_info:
   native_localization: en
   localized_name:
     en: American Sign Language
+
+webhook:
+  channel: schedule
+  url: ASL_SCHEDULE_WEBHOOK_URL

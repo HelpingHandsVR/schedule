@@ -1,4 +1,5 @@
-PyYAML ~= 6.0.2
 click ~= 8.1.8
+discord.py >= 2.5.2
 jsonschema ~= 4.23.0
+PyYAML ~= 6.0.2
 tzdata >= 2025.1

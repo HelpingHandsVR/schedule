@@ -8,6 +8,8 @@ import dataclasses
 import datetime
 import typing
 
+import discord
+
 
 class EventLaneLanguageInfo(typing.TypedDict):
     abbreviation: str
@@ -15,9 +17,17 @@ class EventLaneLanguageInfo(typing.TypedDict):
     localized_name: dict[str, str]
 
 
+class EventLaneWebhookInfo(typing.TypedDict):
+    channel: str
+    url: str
+    message_id: typing.NotRequired[int]
+
+
 class EventLaneMeta(typing.TypedDict):
+    channels: dict[str, int]
     default_timezone: str
     language_info: typing.NotRequired[EventLaneLanguageInfo]
+    webhook: typing.NotRequired[EventLaneWebhookInfo]
 
 
 class EventLaneRawEventSchedule(typing.TypedDict):
@@ -40,7 +50,7 @@ class EventLaneRawEvents(typing.TypedDict):
     events: list[EventLaneRawEvent]
 
 
-@dataclasses.dataclass
+@dataclasses.dataclass(frozen=True)
 class EventLaneEvent:
     host: str
     name: str
@@ -62,8 +72,10 @@ class EventLaneEvent:
         return needle
 
 
-@dataclasses.dataclass
+@dataclasses.dataclass(frozen=True)
 class EventLane:
     name: str
     meta: EventLaneMeta
     events: list[EventLaneEvent]
+    webhook: discord.SyncWebhook | None
+    webhook_message_id: int | None

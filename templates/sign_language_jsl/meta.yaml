@@ -15,3 +15,7 @@ language_info:
   localized_name:
     en: Japanese Sign Language
     ja: 日本手話
+
+webhook:
+  channel: schedule
+  url: JSL_SCHEDULE_WEBHOOK_URL

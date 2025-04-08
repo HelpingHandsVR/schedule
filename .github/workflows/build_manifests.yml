@@ -26,6 +26,14 @@ jobs:
           pip install -U -r scripts/requirements.txt
 
       - name: Generate manifests
+        env:
+          GLOBAL_SCHEDULE_WEBHOOK_URL: ${{ secrets.GLOBAL_SCHEDULE_WEBHOOK_URL }}
+          ASL_SCHEDULE_WEBHOOK_URL: ${{ secrets.ASL_SCHEDULE_WEBHOOK_URL }}
+          BSL_SCHEDULE_WEBHOOK_URL: ${{ secrets.BSL_SCHEDULE_WEBHOOK_URL }}
+          DGS_SCHEDULE_WEBHOOK_URL: ${{ secrets.DGS_SCHEDULE_WEBHOOK_URL }}
+          JSL_SCHEDULE_WEBHOOK_URL: ${{ secrets.JSL_SCHEDULE_WEBHOOK_URL }}
+          KSL_SCHEDULE_WEBHOOK_URL: ${{ secrets.KSL_SCHEDULE_WEBHOOK_URL }}
+          LSF_SCHEDULE_WEBHOOK_URL: ${{ secrets.LSF_SCHEDULE_WEBHOOK_URL }}
         run: |
           python scripts/build_manifests.py
 

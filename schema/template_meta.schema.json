@@ -56,6 +56,23 @@
                     "additionalProperties": false
                 }
             }
+        },
+        "webhook": {
+            "type": "object",
+            "properties": {
+                "channel": {
+                    "type": "string",
+                    "description": "The key in the 'channels' object that this corresponds to."
+                },
+                "url": {
+                    "type": "string",
+                    "description": "The name of the environment variable containing the webhook URL to use."
+                },
+                "message_id": {
+                    "type": "number",
+                    "description": "The ID of the message to update."
+                }
+            }
         }
     },
     "required": ["channels", "default_timezone"]
