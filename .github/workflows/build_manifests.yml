@@ -5,7 +5,17 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 5 * * *"
+    # 5:17am UTC every day
+    # This ends up being ~midnight in the US, ~5/6am in the UK, and ~midday in Asia, so we would not usually expect
+    #  many events to be running at this time, so it is safer to update here.
+    # We choose the weird minute offset of 17 because GitHub Actions experiences a lot of load on the hour and the
+    #  likelihood of the workflow failing to run is reduced if we do it at an off-peak time.
+    - cron: "17 5 * * *"
+    # On Mondays, we also update at 00:17 and 11:17 UTC.
+    # This is because Mondays are when the schedules 'roll over' to the next week. Each event lane 'rolls over' at
+    #  5am in its default timezone, so running the jobs at these times allows the event schedule to be properly
+    #  updated before any events would realistically happen in any of the given lanes.
+    - cron: "17 0,11 * * 1"
   workflow_dispatch: {}
 
 jobs:
