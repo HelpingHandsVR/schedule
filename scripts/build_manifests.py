@@ -111,11 +111,13 @@ def main():
 
         with report_error("    Resolving webhook if present"):
             webhook = None
+            webhook_info = None
             webhook_message_id = None
 
             if meta_data.get('webhook', None) is not None:
-                webhook_url = os.getenv(meta_data['webhook']['url'])
-                webhook_message_id = meta_data['webhook'].get('message_id', None)
+                webhook_info = meta_data['webhook']
+                webhook_url = os.getenv(webhook_info['url'])
+                webhook_message_id = webhook_info.get('message_id', None)
 
                 if webhook_url:
                     webhook = discord.SyncWebhook.from_url(webhook_url)
@@ -125,6 +127,7 @@ def main():
             meta=meta_data,
             events=events,
             webhook=webhook,
+            webhook_info=webhook_info,
             webhook_message_id=webhook_message_id,
         )
 

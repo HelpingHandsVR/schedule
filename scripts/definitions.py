@@ -21,11 +21,13 @@ class EventLaneWebhookInfo(typing.TypedDict):
     channel: str
     url: str
     message_id: typing.NotRequired[int]
+    header: typing.NotRequired[str]
 
 
 class EventLaneMeta(typing.TypedDict):
     channels: dict[str, int]
     default_timezone: str
+    use_all_events: typing.NotRequired[bool]
     language_info: typing.NotRequired[EventLaneLanguageInfo]
     webhook: typing.NotRequired[EventLaneWebhookInfo]
 
@@ -78,4 +80,5 @@ class EventLane:
     meta: EventLaneMeta
     events: list[EventLaneEvent]
     webhook: discord.SyncWebhook | None
+    webhook_info: EventLaneWebhookInfo | None
     webhook_message_id: int | None

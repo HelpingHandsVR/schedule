@@ -6,6 +6,7 @@ Webhook, technically not a format, but allows us to send webhook messages
 
 import datetime
 import collections
+import itertools
 from zoneinfo import ZoneInfo
 
 import discord
@@ -112,7 +113,12 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
 
         events_by_day: dict[int, list[tuple[EventLaneEvent, datetime.datetime]]] = collections.defaultdict(list)
 
-        for event in event_lane.events:
+        if event_lane.meta.get('use_all_events', False):
+            events = list(itertools.chain(*[lane.events for lane in event_lanes]))
+        else:
+            events = event_lane.events
+
+        for event in events:
             next_occurrence = event.next_occurrence_after(last_monday_5am)
 
             # If this event doesn't next occur within this week then we don't care about it right now
@@ -124,6 +130,17 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
 
         # One embed for each day
         weekday_embeds = []
+
+        # If a header exists, make an embed for it
+        header_text = event_lane.webhook_info.get('header', '')
+
+        if header_text:
+            weekday_embeds.append(discord.Embed(
+                color=discord.Color.from_rgb(254, 254, 254),
+                description=header_text,
+            ))
+
+        # Todo: add timezone shift warning
 
         for weekday_offset in range(0, 7):
             # Calculate the day

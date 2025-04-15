@@ -9,7 +9,14 @@ channels:
 
 default_timezone: America/New_York
 
+use_all_events: true
+
 webhook:
   channel: schedule
   url: GLOBAL_SCHEDULE_WEBHOOK_URL
   message_id: 1359291126225309726
+  header: |
+    # Global Schedule
+
+    This schedule shows a combined view of all the events in the server.
+

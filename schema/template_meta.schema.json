@@ -35,6 +35,10 @@
             "type": "string",
             "description": "The default timezone to use for this template in IANA (Region/Zone) format."
         },
+        "use_all_events": {
+            "type": "boolean",
+            "description": "Whether this schedule encompasses all the event lanes or not."
+        },
         "language_info": {
             "type": "object",
             "properties": {
@@ -71,6 +75,10 @@
                 "message_id": {
                     "type": "number",
                     "description": "The ID of the message to update."
+                },
+                "header": {
+                    "type": "string",
+                    "description": "Content to appear in the 'header embed' if applicable"
                 }
             }
         }
