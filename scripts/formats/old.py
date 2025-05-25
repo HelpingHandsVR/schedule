@@ -56,6 +56,7 @@ def generate_old_format(event_lanes: list[EventLane]) -> dict:
             manifest.append({
                 "id": event_id,
                 "language": event_lane.meta['language_info']['abbreviation'],
+                "event_name": event.name,
                 "presenter": event.host,
                 "location": "unknown",
                 "timestamp": str(int(next_occurrence.timestamp() * 1000)),
