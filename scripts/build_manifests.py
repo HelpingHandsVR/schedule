@@ -104,6 +104,7 @@ def main():
                     host=raw_event['host'],
                     name=raw_event['name'],
                     tags=raw_event['tags'],
+                    paused=raw_event.get('paused', False),
                     basis=basis,
                     timezone=timezone,
                     interval=raw_event['schedule'].get('interval', None) or 7

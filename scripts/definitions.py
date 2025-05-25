@@ -45,6 +45,7 @@ class EventLaneRawEvent(typing.TypedDict):
     host: str
     name: str
     tags: list[str]
+    paused: typing.NotRequired[bool]
     schedule: EventLaneRawEventSchedule
 
 
@@ -57,11 +58,16 @@ class EventLaneEvent:
     host: str
     name: str
     tags: list[str]
+    paused: bool
     basis: datetime.datetime
     timezone: str
     interval: int
 
-    def next_occurrence_after(self, target: datetime.datetime):
+    def next_occurrence_after(self, target: datetime.datetime) -> typing.Optional[datetime.datetime]:
+        # If paused, no next occurrence
+        if self.paused:
+            return None
+
         # Calculate the amount of days that have passed since the basis
         days_since_basis = (target - self.basis).days
         # Start search from floored interval from basis

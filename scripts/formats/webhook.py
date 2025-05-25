@@ -121,6 +121,10 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
         for event in events:
             next_occurrence = event.next_occurrence_after(last_monday_5am)
 
+            # If the event has no next occurrence then we don't care about it right now
+            if next_occurrence is None:
+                continue
+
             # If this event doesn't next occur within this week then we don't care about it right now
             if next_occurrence < last_monday_5am or next_occurrence >= next_monday_5am:
                 continue

@@ -28,6 +28,10 @@
                         "type": "string"
                     }
                 },
+                "paused": {
+                    "type": "boolean",
+                    "description": "Whether this event is paused or not."
+                },
                 "schedule": {
                     "type": "object",
                     "properties": {

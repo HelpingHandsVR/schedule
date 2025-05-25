@@ -5,6 +5,7 @@ events:
   - host: Amarante
     name: ASL Class (East)
     tags: ["sign_zone"]
+    paused: true
     schedule:
       basis: "2025-03-17"
       day: Monday
@@ -15,6 +16,7 @@ events:
   - host: Amarante
     name: ASL Sign Zone
     tags: ["sign_zone"]
+    paused: true
     schedule:
       basis: "2025-03-10"
       day: Monday
@@ -76,6 +78,7 @@ events:
   - host: Amarante
     name: ASL Class (West)
     tags: ["class"]
+    paused: true
     schedule:
       basis: "2025-03-09"
       day: Sunday

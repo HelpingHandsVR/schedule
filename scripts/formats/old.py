@@ -33,6 +33,9 @@ def generate_old_format(event_lanes: list[EventLane]) -> dict:
         for event in event_lane.events:
             next_occurrence = event.next_occurrence_after(now)
 
+            if next_occurrence is None:
+                continue
+
             # ID is generated off the basis timestamp - this should at least make it unique for different times,
             #  but if two events occur at the exact same time, we can't rely on it being enough.
             # Because events are rarely not on 15-minute intervals (900 seconds), we can multiply the timestamp
