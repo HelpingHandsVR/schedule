@@ -38,6 +38,7 @@ jobs:
       - name: Generate manifests
         env:
           GLOBAL_SCHEDULE_WEBHOOK_URL: ${{ secrets.GLOBAL_SCHEDULE_WEBHOOK_URL }}
+          MISC_SCHEDULE_WEBHOOK_URL: ${{ secrets.MISC_SCHEDULE_WEBHOOK_URL }}
           ASL_SCHEDULE_WEBHOOK_URL: ${{ secrets.ASL_SCHEDULE_WEBHOOK_URL }}
           BSL_SCHEDULE_WEBHOOK_URL: ${{ secrets.BSL_SCHEDULE_WEBHOOK_URL }}
           DGS_SCHEDULE_WEBHOOK_URL: ${{ secrets.DGS_SCHEDULE_WEBHOOK_URL }}
