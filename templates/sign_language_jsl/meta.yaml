@@ -19,4 +19,4 @@ language_info:
 webhook:
   channel: schedule
   url: JSL_SCHEDULE_WEBHOOK_URL
-  message_id: 1359291122790170807
+  message_id: JSL_SCHEDULE_MESSAGE_ID

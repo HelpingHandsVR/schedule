@@ -38,13 +38,29 @@ jobs:
       - name: Generate manifests
         env:
           GLOBAL_SCHEDULE_WEBHOOK_URL: ${{ secrets.GLOBAL_SCHEDULE_WEBHOOK_URL }}
+          GLOBAL_SCHEDULE_MESSAGE_ID: ${{ secrets.GLOBAL_SCHEDULE_MESSAGE_ID }}
+
           MISC_SCHEDULE_WEBHOOK_URL: ${{ secrets.MISC_SCHEDULE_WEBHOOK_URL }}
+          MISC_SCHEDULE_MESSAGE_ID: ${{ secrets.MISC_SCHEDULE_MESSAGE_ID }}
+
           ASL_SCHEDULE_WEBHOOK_URL: ${{ secrets.ASL_SCHEDULE_WEBHOOK_URL }}
+          ASL_SCHEDULE_MESSAGE_ID: ${{ secrets.ASL_SCHEDULE_MESSAGE_ID }}
+
           BSL_SCHEDULE_WEBHOOK_URL: ${{ secrets.BSL_SCHEDULE_WEBHOOK_URL }}
+          BSL_SCHEDULE_MESSAGE_ID: ${{ secrets.BSL_SCHEDULE_MESSAGE_ID }}
+
           DGS_SCHEDULE_WEBHOOK_URL: ${{ secrets.DGS_SCHEDULE_WEBHOOK_URL }}
+          DGS_SCHEDULE_MESSAGE_ID: ${{ secrets.DGS_SCHEDULE_MESSAGE_ID }}
+
           JSL_SCHEDULE_WEBHOOK_URL: ${{ secrets.JSL_SCHEDULE_WEBHOOK_URL }}
+          JSL_SCHEDULE_MESSAGE_ID: ${{ secrets.JSL_SCHEDULE_MESSAGE_ID }}
+
           KSL_SCHEDULE_WEBHOOK_URL: ${{ secrets.KSL_SCHEDULE_WEBHOOK_URL }}
+          KSL_SCHEDULE_MESSAGE_ID: ${{ secrets.KSL_SCHEDULE_MESSAGE_ID }}
+
           LSF_SCHEDULE_WEBHOOK_URL: ${{ secrets.LSF_SCHEDULE_WEBHOOK_URL }}
+          LSF_SCHEDULE_MESSAGE_ID: ${{ secrets.LSF_SCHEDULE_MESSAGE_ID }}
+
         run: |
           python scripts/build_manifests.py
 

@@ -19,4 +19,4 @@ language_info:
 webhook:
   channel: schedule
   url: LSF_SCHEDULE_WEBHOOK_URL
-  message_id: 1359291127689380021
+  message_id: LSF_SCHEDULE_MESSAGE_ID

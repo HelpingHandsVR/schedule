@@ -73,8 +73,8 @@
                     "description": "The name of the environment variable containing the webhook URL to use."
                 },
                 "message_id": {
-                    "type": "number",
-                    "description": "The ID of the message to update."
+                    "type": "string",
+                    "description": "The name of the environment variable containing the ID of the message to update."
                 },
                 "header": {
                     "type": "string",

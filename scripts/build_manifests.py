@@ -118,10 +118,22 @@ def main():
             if meta_data.get('webhook', None) is not None:
                 webhook_info = meta_data['webhook']
                 webhook_url = os.getenv(webhook_info['url'])
-                webhook_message_id = webhook_info.get('message_id', None)
+                webhook_message_id_variable = webhook_info.get('message_id', None)
+
+                if webhook_message_id_variable:
+                    webhook_message_id = os.getenv(webhook_message_id_variable)
+                    if webhook_message_id:
+                        webhook_message_id = int(webhook_message_id)
+                else:
+                    webhook_message_id = None
 
                 if webhook_url:
                     webhook = discord.SyncWebhook.from_url(webhook_url)
+
+                    if not webhook_message_id:
+                        click.secho(f"Warning: no existing webhook message ID found for {event_lane_name}", fg='yellow')
+                else:
+                    click.secho(f"Warning: no webhook URL found for {event_lane_name}", fg='yellow')
 
         event_lane = EventLane(
             name=event_lane_name,

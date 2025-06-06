@@ -19,4 +19,4 @@ language_info:
 webhook:
   channel: schedule
   url: KSL_SCHEDULE_WEBHOOK_URL
-  message_id: 1359291123826298952
+  message_id: KSL_SCHEDULE_MESSAGE_ID

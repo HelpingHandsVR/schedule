@@ -14,7 +14,7 @@ language_info:
 webhook:
   channel: schedule
   url: MISC_SCHEDULE_WEBHOOK_URL
-  message_id: 1380442773009858602
+  message_id: MISC_SCHEDULE_MESSAGE_ID
   header: |
     # Miscellaneous Schedule
 

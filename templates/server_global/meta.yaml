@@ -14,7 +14,7 @@ use_all_events: true
 webhook:
   channel: schedule
   url: GLOBAL_SCHEDULE_WEBHOOK_URL
-  message_id: 1359291126225309726
+  message_id: GLOBAL_SCHEDULE_MESSAGE_ID
   header: |
     # Global Schedule
 
