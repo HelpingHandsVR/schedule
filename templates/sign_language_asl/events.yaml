@@ -34,26 +34,6 @@ events:
       hour: 20
       minute: 0
 
-  # Friday
-  - host: DmTheMechanic
-    name: ASL Class
-    tags: ["class"]
-    schedule:
-      basis: "2025-03-14"
-      day: Friday
-      hour: 17
-      minute: 0
-
-  - host: Chris
-    name: ASL Game Night
-    tags: ["game_night"]
-    schedule:
-      timezone: America/Chicago
-      basis: "2025-03-14"
-      day: Friday
-      hour: 20
-      minute: 0
-
   # Saturday
   - host: Crow_Se7en
     name: ASL Class

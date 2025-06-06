@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schema/template_events.schema.json
+
+events:
+  # Friday
+  - host: Fearlesskoolaid
+    name: Game Night
+    tags: ["game_night"]
+    schedule:
+      timezone: America/Chicago
+      basis: "2025-03-14"
+      day: Friday
+      hour: 20
+      minute: 0

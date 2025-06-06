@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schema/template_meta.schema.json
+
+channels:
+  schedule: 1380439765018611732
+
+default_timezone: America/New_York
+
+language_info:
+  abbreviation: ASL
+  native_localization: en
+  localized_name:
+    en: American Sign Language
+
+webhook:
+  channel: schedule
+  url: MISC_SCHEDULE_WEBHOOK_URL
+  # message_id: 0000000000000000000
+  header: |
+    # Miscellaneous Schedule
+
+    This schedule shows any miscellaneous events we do that aren't specific to any sign language.

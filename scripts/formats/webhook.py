@@ -92,6 +92,8 @@ def to_regionals(text: str):
 
 
 def send_webhooks(event_lanes: list[EventLane]) -> dict:
+    lane_messages = {}
+
     # Calculate for each event lane, as it changes how we calculate what counts as 'today'
     for event_lane in event_lanes:
         # We can't work with no webhook..
@@ -108,8 +110,6 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
             last_monday_5am = last_monday_5am - datetime.timedelta(days=7)
 
         next_monday_5am = last_monday_5am + datetime.timedelta(days=7)
-
-        lane_messages = {}
 
         events_by_day: dict[int, list[tuple[EventLaneEvent, datetime.datetime]]] = collections.defaultdict(list)
 
