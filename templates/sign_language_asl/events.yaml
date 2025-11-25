@@ -24,7 +24,7 @@ events:
       minute: 0
 
   # Thursday
-  - host: ShadeAxas
+  - host: CommanderKitsun
     name: ASL Sign Zone
     tags: ["sign_zone"]
     schedule:
