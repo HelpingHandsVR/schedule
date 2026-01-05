@@ -6,7 +6,7 @@ events:
     name: "KSL Class"
     tags: ["class"]
     schedule:
-      basis: "2025-12-01"
-      day: Monday
+      basis: "2026-01-06"
+      day: Tuesday
       hour: 5
       minute: 00
