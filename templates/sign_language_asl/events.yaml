@@ -3,28 +3,16 @@
 events:
   # Monday
   - host: Amarante
-    name: ASL Class (East)
-    tags: ["sign_zone"]
-    paused: true
-    schedule:
-      basis: "2025-03-17"
-      day: Monday
-      hour: 15
-      minute: 0
-      interval: 14
-
-  - host: Amarante
     name: ASL Sign Zone
     tags: ["sign_zone"]
-    paused: true
     schedule:
       basis: "2025-03-10"
       day: Monday
-      hour: 15
+      hour: 17
       minute: 0
 
   # Thursday
-  - host: CommanderKitsun
+  - host: Fearlesskoolaid
     name: ASL Sign Zone
     tags: ["sign_zone"]
     schedule:
@@ -35,6 +23,16 @@ events:
       minute: 0
 
   # Saturday
+  - host: ZadeTheCheetah
+    name: IRL ASL Class
+    tags: ["class"]
+    schedule:
+      timezone: America/Dallas
+      basis: "2026-01-10"
+      day: Saturday
+      hour: 19
+      minute: 30
+
   - host: Crow_Se7en
     name: ASL Class
     tags: ["class"]
@@ -53,15 +51,3 @@ events:
       day: Saturday
       hour: 10
       minute: 0
-
-  # Sunday
-  - host: Amarante
-    name: ASL Class (West)
-    tags: ["class"]
-    paused: true
-    schedule:
-      basis: "2025-03-09"
-      day: Sunday
-      hour: 17
-      minute: 0
-      interval: 14
