@@ -27,7 +27,7 @@ events:
     name: IRL ASL Class
     tags: ["class"]
     schedule:
-      timezone: America/Dallas
+      timezone: America/Chicago
       basis: "2026-01-10"
       day: Saturday
       hour: 19
