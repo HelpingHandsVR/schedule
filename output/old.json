@@ -1,0 +1,954 @@
+[
+  {
+    "id": 34841532901,
+    "language": "DGS",
+    "event_name": "DGS Class",
+    "presenter": "deaf_danielo_89",
+    "location": "unknown",
+    "timestamp": "1771711200000",
+    "time_until": "57847074",
+    "root_timezone": "Europe/Berlin",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 02:00 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 04:00 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 05:00 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Saturday 10:00 PM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Saturday 11:00 PM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Sunday 01:00 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Sunday 06:00 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Sunday 07:00 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34841528438,
+    "language": "BSL",
+    "event_name": "BSL Class",
+    "presenter": "AvinouSCAC",
+    "location": "unknown",
+    "timestamp": "1771711200000",
+    "time_until": "57847074",
+    "root_timezone": "Europe/London",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 02:00 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 04:00 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 05:00 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Saturday 10:00 PM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Saturday 11:00 PM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Sunday 01:00 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Sunday 06:00 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Sunday 07:00 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34831219189,
+    "language": "JSL",
+    "event_name": "JSL Class",
+    "presenter": "\u30e9\u30d5\u30a1\u30a8\u30ebRafael",
+    "location": "unknown",
+    "timestamp": "1771720200000",
+    "time_until": "66847074",
+    "root_timezone": "Asia/Tokyo",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 04:30 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 06:30 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 07:30 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Sunday 12:30 AM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Sunday 01:30 AM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Sunday 03:30 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Sunday 08:30 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Sunday 09:30 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34841636690,
+    "language": "ASL",
+    "event_name": "ASL Class",
+    "presenter": "Crow_Se7en",
+    "location": "unknown",
+    "timestamp": "1771720200000",
+    "time_until": "66847074",
+    "root_timezone": "America/New_York",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 04:30 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 06:30 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 07:30 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Sunday 12:30 AM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Sunday 01:30 AM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Sunday 03:30 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Sunday 08:30 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Sunday 09:30 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 35361911617,
+    "language": "ASL",
+    "event_name": "IRL ASL Class",
+    "presenter": "ZadeTheCheetah",
+    "location": "unknown",
+    "timestamp": "1771723800000",
+    "time_until": "70447074",
+    "root_timezone": "America/Chicago",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 05:30 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 07:30 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Saturday 08:30 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Sunday 01:30 AM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Sunday 02:30 AM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Sunday 04:30 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Sunday 09:30 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Sunday 10:30 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34831055339,
+    "language": "LSF",
+    "event_name": "LSF Game Night",
+    "presenter": "XKaijo",
+    "location": "unknown",
+    "timestamp": "1771792200000",
+    "time_until": "138847074",
+    "root_timezone": "Europe/Paris",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Sunday 12:30 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Sunday 02:30 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Sunday 03:30 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Sunday 08:30 PM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Sunday 09:30 PM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Sunday 11:30 PM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Monday 04:30 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Monday 05:30 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 35352873711,
+    "language": "KSL",
+    "event_name": "KSL Class",
+    "presenter": "Korea_Yujin",
+    "location": "unknown",
+    "timestamp": "1771876800000",
+    "time_until": "223447074",
+    "root_timezone": "Asia/Seoul",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Monday 12:00 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Monday 02:00 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Monday 03:00 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Monday 08:00 PM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Monday 09:00 PM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Monday 11:00 PM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Tuesday 04:00 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Tuesday 05:00 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34832816429,
+    "language": "ASL",
+    "event_name": "ASL Sign Zone",
+    "presenter": "Amarante",
+    "location": "unknown",
+    "timestamp": "1771884000000",
+    "time_until": "230647074",
+    "root_timezone": "America/New_York",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Monday 02:00 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Monday 04:00 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Monday 05:00 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Monday 10:00 PM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Monday 11:00 PM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Tuesday 01:00 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Tuesday 06:00 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Tuesday 07:00 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34834511339,
+    "language": "LSF",
+    "event_name": "LSF Basic Class",
+    "presenter": "XKaijo",
+    "location": "unknown",
+    "timestamp": "1771965000000",
+    "time_until": "311647074",
+    "root_timezone": "Europe/Paris",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Tuesday 12:30 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Tuesday 02:30 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Tuesday 03:30 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Tuesday 08:30 PM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Tuesday 09:30 PM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Tuesday 11:30 PM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Wednesday 04:30 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Wednesday 05:30 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34836239339,
+    "language": "LSF",
+    "event_name": "LSF Class",
+    "presenter": "XKaijo",
+    "location": "unknown",
+    "timestamp": "1772051400000",
+    "time_until": "398047074",
+    "root_timezone": "Europe/Paris",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Wednesday 12:30 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Wednesday 02:30 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Wednesday 03:30 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Wednesday 08:30 PM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Wednesday 09:30 PM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Wednesday 11:30 PM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Thursday 04:30 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Thursday 05:30 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34838289061,
+    "language": "ASL",
+    "event_name": "ASL Sign Zone",
+    "presenter": "Fearlesskoolaid",
+    "location": "unknown",
+    "timestamp": "1772157600000",
+    "time_until": "504247074",
+    "root_timezone": "America/Chicago",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Thursday 06:00 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Thursday 08:00 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Thursday 09:00 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Friday 02:00 AM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Friday 03:00 AM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Friday 05:00 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Friday 10:00 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Friday 11:00 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34839695339,
+    "language": "LSF",
+    "event_name": "LSF Class",
+    "presenter": "XKaijo",
+    "location": "unknown",
+    "timestamp": "1772224200000",
+    "time_until": "570847074",
+    "root_timezone": "Europe/Paris",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 12:30 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 02:30 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 03:30 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Friday 08:30 PM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Friday 09:30 PM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Friday 11:30 PM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Saturday 04:30 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Saturday 05:30 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34839946990,
+    "language": "ASL",
+    "event_name": "ASL Sign Zone",
+    "presenter": "Undeadsee",
+    "location": "unknown",
+    "timestamp": "1772236800000",
+    "time_until": "583447074",
+    "root_timezone": "Australia/Brisbane",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 04:00 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 06:00 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 07:00 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Saturday 12:00 AM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Saturday 01:00 AM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Saturday 03:00 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Saturday 08:00 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Saturday 09:00 AM KST"
+      }
+    ]
+  },
+  {
+    "id": 34840017061,
+    "language": "ASL",
+    "event_name": "Game Night",
+    "presenter": "Fearlesskoolaid",
+    "location": "unknown",
+    "timestamp": "1772244000000",
+    "time_until": "590647074",
+    "root_timezone": "America/Chicago",
+    "timezones": [
+      {
+        "iana": "America/Los_Angeles",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 06:00 PM PST"
+      },
+      {
+        "iana": "America/Chicago",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 08:00 PM CST"
+      },
+      {
+        "iana": "America/New_York",
+        "alpha2": "US",
+        "alpha3": "USA",
+        "territory": "United States",
+        "text": "Friday 09:00 PM EST"
+      },
+      {
+        "iana": "Europe/London",
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "territory": "United Kingdom",
+        "text": "Saturday 02:00 AM GMT"
+      },
+      {
+        "iana": "Europe/Paris",
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "territory": "France",
+        "text": "Saturday 03:00 AM CET"
+      },
+      {
+        "iana": "Europe/Moscow",
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "territory": "Russia",
+        "text": "Saturday 05:00 AM MSK"
+      },
+      {
+        "iana": "Australia/Perth",
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "territory": "Australia",
+        "text": "Saturday 10:00 AM AWST"
+      },
+      {
+        "iana": "Asia/Seoul",
+        "alpha2": "KR",
+        "alpha3": "KOR",
+        "territory": "Republic of Korea",
+        "text": "Saturday 11:00 AM KST"
+      }
+    ]
+  }
+]
