@@ -20,7 +20,7 @@ class EventLaneLanguageInfo(typing.TypedDict):
 class EventLaneWebhookInfo(typing.TypedDict):
     channel: str
     url: str
-    message_id: typing.NotRequired[int]
+    message_id: typing.NotRequired[str]
     header: typing.NotRequired[str]
 
 
@@ -39,6 +39,8 @@ class EventLaneRawEventSchedule(typing.TypedDict):
     hour: int
     minute: int
     interval: typing.NotRequired[int]
+    not_before: typing.NotRequired[str]
+    not_after: typing.NotRequired[str]
 
 
 class EventLaneRawEvent(typing.TypedDict):
@@ -62,6 +64,8 @@ class EventLaneEvent:
     basis: datetime.datetime
     timezone: str
     interval: int
+    not_before: datetime.date | None
+    not_after: datetime.date | None
 
     def next_occurrence_after(self, target: datetime.datetime) -> typing.Optional[datetime.datetime]:
         # If paused, no next occurrence
@@ -74,8 +78,14 @@ class EventLaneEvent:
         starting_day_offset = int(days_since_basis / self.interval) * self.interval
         needle = self.basis + datetime.timedelta(days=starting_day_offset)
 
-        while needle < target:
+        while needle < target or (needle.date() < self.not_before if self.not_before else False):
             needle += datetime.timedelta(days=self.interval)
+
+            if self.not_after and needle.date() > self.not_after:
+                return None
+
+        if self.not_after and needle.date() > self.not_after:
+            return None
 
         return needle
 

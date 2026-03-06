@@ -14,18 +14,20 @@ events:
   # Tuesday
   - host: Ray_is_Deaf
     name: ASL Class for PCVR Users
-    tags: ["class"]
+    tags: ["class", "target:pcvr"]
     schedule:
       basis: "2026-03-10"
+      not_before: "2026-03-10"
       day: Tuesday
       hour: 14
       minute: 0
 
   - host: Ray_is_Deaf
     name: ASL Class for Quest/Android Users
-    tags: ["class"]
+    tags: ["class", "target:questvr"]
     schedule:
       basis: "2026-03-10"
+      not_before: "2026-03-10"
       day: Tuesday
       hour: 17
       minute: 0
@@ -76,6 +78,7 @@ events:
     tags: ["class"]
     schedule:
       basis: "2026-03-22"
+      not_before: "2026-03-22"
       day: Sunday
       hour: 13
       minute: 0

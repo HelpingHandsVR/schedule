@@ -9,6 +9,7 @@ import datetime
 import json
 import os
 import pathlib
+import typing
 from zoneinfo import ZoneInfo
 
 import click
@@ -79,23 +80,24 @@ def main():
             jsonschema.validate(instance=events_data, schema=events_schema)
 
         with report_error("    Converting events into agnostic times"):
-            events = []
+            events: list[EventLaneEvent] = []
 
             for raw_event in events_data["events"]:
+                schedule = raw_event["schedule"]
                 # Get timezone name
-                timezone = raw_event["schedule"].get("timezone", None) or meta_data["default_timezone"]
+                timezone = schedule.get("timezone", None) or meta_data["default_timezone"]
                 # Calculate basis datetime
                 basis = datetime.datetime \
-                    .strptime(raw_event["schedule"]["basis"], "%Y-%m-%d") \
+                    .strptime(schedule["basis"], "%Y-%m-%d") \
                     .replace(
-                        hour=raw_event["schedule"]["hour"],
-                        minute=raw_event["schedule"]["minute"],
+                        hour=schedule["hour"],
+                        minute=schedule["minute"],
                         tzinfo=ZoneInfo(timezone)
                     )
 
                 # Check days line up
                 basis_day = basis.strftime("%A")
-                claimed_day = raw_event["schedule"]["day"]
+                claimed_day = schedule["day"]
                 assert \
                     basis_day == claimed_day, \
                     f"Event '{raw_event['name']}' w/ {raw_event['host']} in `{event_lane_name}` has basis time of {basis:%a %d %b %Y, %I:%M%p} but claims it is a {claimed_day}"
@@ -107,7 +109,9 @@ def main():
                     paused=raw_event.get('paused', False),
                     basis=basis,
                     timezone=timezone,
-                    interval=raw_event['schedule'].get('interval', None) or 7
+                    interval=schedule.get('interval', None) or 7,
+                    not_before=datetime.datetime.strptime(schedule["not_before"], "%Y-%m-%d").date() if schedule.get("not_before", None) else None,
+                    not_after=datetime.datetime.strptime(schedule["not_after"], "%Y-%m-%d").date() if schedule.get("not_after", None) else None,
                 ))
 
         with report_error("    Resolving webhook if present"):
@@ -115,15 +119,16 @@ def main():
             webhook_info = None
             webhook_message_id = None
 
-            if meta_data.get('webhook', None) is not None:
-                webhook_info = meta_data['webhook']
+            webhook_info = meta_data.get('webhook', None)
+
+            if webhook_info is not None:
                 webhook_url = os.getenv(webhook_info['url'])
                 webhook_message_id_variable = webhook_info.get('message_id', None)
 
                 if webhook_message_id_variable:
-                    webhook_message_id = os.getenv(webhook_message_id_variable)
-                    if webhook_message_id:
-                        webhook_message_id = int(webhook_message_id)
+                    webhook_message_id_var = os.getenv(webhook_message_id_variable)
+                    if webhook_message_id_var:
+                        webhook_message_id = int(webhook_message_id_var)
                 else:
                     webhook_message_id = None
 
@@ -146,10 +151,12 @@ def main():
 
         event_lanes.append(event_lane)
 
-    OUTPUT_FORMATS = (
+    OUTPUT_FORMATS: list[tuple[
+        typing.Callable[[list[EventLane]], dict[str, typing.Any]], str
+    ]] = [
         (generate_old_format, "old.json"),
         (send_webhooks, "webhook.json"),
-    )
+    ]
 
     click.secho("Generating output formats...", fg='blue')
 
