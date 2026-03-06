@@ -11,6 +11,25 @@ events:
       hour: 17
       minute: 0
 
+  # Tuesday
+  - host: Ray_is_Deaf
+    name: ASL Class for PCVR Users
+    tags: ["class"]
+    schedule:
+      basis: "2026-03-10"
+      day: Tuesday
+      hour: 14
+      minute: 0
+
+  - host: Ray_is_Deaf
+    name: ASL Class for Quest/Android Users
+    tags: ["class"]
+    schedule:
+      basis: "2026-03-10"
+      day: Tuesday
+      hour: 17
+      minute: 0
+
   # Thursday
   - host: Fearlesskoolaid
     name: ASL Sign Zone
@@ -50,4 +69,13 @@ events:
       basis: "2025-03-15"
       day: Saturday
       hour: 10
+      minute: 0
+
+  - host: Amarante
+    name: ASL Class
+    tags: ["class"]
+    schedule:
+      basis: "2026-03-22"
+      day: Sunday
+      hour: 13
       minute: 0
