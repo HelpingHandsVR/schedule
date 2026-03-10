@@ -18,7 +18,6 @@ def calculate_notable_date_emojis(year: int) -> dict[tuple[int, int], str]:
     notable_date_emojis = {
         (1,  1):  "🎉",   # New Year's Day
         (2,  14): "❤️",   # Valentine’s Day
-        (3,  13): "🦻",   # Start of National Deaf History Month
         (3,  17): "🍀",   # St. Patrick’s Day
         (4,  1):  "🥳",   # April Fools Day
         (4,  8):  "🎓",   # Anniversary of the founding of Gallaudet University
