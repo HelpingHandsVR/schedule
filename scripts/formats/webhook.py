@@ -185,7 +185,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
 
                     description_parts.append(
                         f"**{event.name}** with {event.host}\n"
-                        f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')}\n"
+                        f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')} ({discord.utils.format_dt(next_occurrence, 'R')})\n"
                         f"{'\n'.join(target_timezones)}"
                     )
 
