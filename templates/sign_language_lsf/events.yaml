@@ -11,16 +11,6 @@ events:
       hour: 21
       minute: 30
 
-  # Wednesday
-  - host: XKaijo
-    name: "LSF Class"
-    tags: ["class"]
-    schedule:
-      basis: "2025-03-12"
-      day: Wednesday
-      hour: 21
-      minute: 30
-
   # Friday
   - host: XKaijo
     name: "LSF Class"
