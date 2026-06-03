@@ -6,6 +6,7 @@ Manifest build script.
 
 import contextlib
 import datetime
+import functools
 import json
 import os
 import pathlib
@@ -23,6 +24,7 @@ except ImportError:
 
 from definitions import EventLane, EventLaneEvent, EventLaneMeta, EventLaneRawEvents
 from formats.old import generate_old_format
+from formats.textmeshpro import generate_textmeshpro_text
 from formats.webhook import send_webhooks
 
 
@@ -152,9 +154,11 @@ def main():
         event_lanes.append(event_lane)
 
     OUTPUT_FORMATS: list[tuple[
-        typing.Callable[[list[EventLane]], dict[str, typing.Any]], str
+        typing.Callable[[list[EventLane]], typing.Union[str, dict[str, typing.Any]]], str
     ]] = [
         (generate_old_format, "old.json"),
+        (functools.partial(generate_textmeshpro_text, language='en'), "textmeshpro.en.txt"),
+        (functools.partial(generate_textmeshpro_text, language='ja'), "textmeshpro.ja.txt"),
         (send_webhooks, "webhook.json"),
     ]
 
@@ -167,7 +171,10 @@ def main():
             output = callback(event_lanes)
 
             with open(OUTPUT_FOLDER / target_filename, 'w', encoding='utf-8') as fp:
-                json.dump(output, fp, indent=2)
+                if isinstance(output, str):
+                    fp.write(output)
+                else:
+                    json.dump(output, fp, indent=2)
 
 
 if __name__ == '__main__':
