@@ -1,0 +1,23 @@
+{% extends "base.jinja2" %}
+{% block head_attributes %}lang="ja"{% endblock %}
+
+{% block content %}
+<h1>Helping Hands スケジュール ({{ generation_time }} に生成済み)</h1>
+<hr>
+<ul>
+    {%- for event in manifest %}
+    <li>
+        <span class="material-icons">alarm</span>
+        <div class="event-content">
+            <span><b>{{ event.event_name }}</b></span>
+            <span> 担当者  {{ event.presenter }}</span>
+
+            {%- for timezone in event.timezones %}
+            <p>{{ timezone }}</p>
+            {%- endfor %}
+        </div>
+    </li>
+    {%- endfor %}
+</ul>
+<hr>
+{% endblock %}

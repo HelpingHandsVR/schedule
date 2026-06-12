@@ -1,6 +1,7 @@
-click ~= 8.1.8
-discord.py >= 2.5.2
-jsonschema ~= 4.23.0
-PyYAML ~= 6.0.2
-requests >= 2.32.3
-tzdata >= 2025.1
+click >= 8.4.1
+discord.py >= 2.7.1
+Jinja2 >= 3.1.6
+jsonschema >= 4.26.0
+PyYAML >= 6.0.3
+requests >= 2.34.2
+tzdata >= 2026.2

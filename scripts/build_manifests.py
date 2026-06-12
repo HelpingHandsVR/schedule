@@ -23,6 +23,7 @@ except ImportError:
     from yaml import Loader
 
 from definitions import EventLane, EventLaneEvent, EventLaneMeta, EventLaneRawEvents
+from formats.html import generate_html
 from formats.old import generate_old_format
 from formats.textmeshpro import generate_textmeshpro_text
 from formats.webhook import send_webhooks
@@ -157,6 +158,8 @@ def main():
         typing.Callable[[list[EventLane]], typing.Union[str, dict[str, typing.Any]]], str
     ]] = [
         (generate_old_format, "old.json"),
+        (functools.partial(generate_html, language='en'), "index.html"),
+        (functools.partial(generate_html, language='ja'), "index.ja.html"),
         (functools.partial(generate_textmeshpro_text, language='en'), "textmeshpro.en.txt"),
         (functools.partial(generate_textmeshpro_text, language='ja'), "textmeshpro.ja.txt"),
         (send_webhooks, "webhook.json"),
