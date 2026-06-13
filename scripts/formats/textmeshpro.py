@@ -102,7 +102,7 @@ DISPLAY_TIMEZONES_SPECIAL = [(ZoneInfo(iana), alpha) for (iana, alpha) in [
 ]]
 
 EVENT_TEXT_SPECIAL = """
-<size=120%>\uE00B</size> <b>{event_name}</b><pos=40%><size=70%>担当者/Presenter: </size> {presenter}</pos>
+<size=120%>\uE00B</size> <b>{event_name}</b><pos=60%><size=70%>担当者/Presenter: </size> {presenter}</pos>
 {timezones}
 """.strip()
 
@@ -124,7 +124,7 @@ def generate_textmeshpro_special(event_lanes: list[EventLane]) -> str:
             ]
 
             paired_timezones = [
-                "            " + timezones[i] + " <pos=45%>" + timezones[i + int(len(timezones) / 2)] + "</pos>"
+                "            " + timezones[i] + " <pos=40%>" + timezones[i + int(len(timezones) / 2)] + "</pos>"
                 for i in range(0, int(len(timezones) / 2))
             ]
 
