@@ -102,7 +102,7 @@ DISPLAY_TIMEZONES_SPECIAL = [(ZoneInfo(iana), alpha) for (iana, alpha) in [
 ]]
 
 EVENT_TEXT_SPECIAL = """
-<size=120%>\uE00B</size> <b>{event_name}</b>                      <size=70%>担当者/Presenter: </size> {presenter}
+<size=120%>\uE00B</size> <b>{event_name}</b><pos=40%><size=70%>担当者/Presenter: </size> {presenter}</pos>
 {timezones}
 """.strip()
 
