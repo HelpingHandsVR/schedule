@@ -25,7 +25,7 @@ except ImportError:
 from definitions import EventLane, EventLaneEvent, EventLaneMeta, EventLaneRawEvents
 from formats.html import generate_html
 from formats.old import generate_old_format
-from formats.textmeshpro import generate_textmeshpro_text
+from formats.textmeshpro import generate_textmeshpro_special, generate_textmeshpro_text
 from formats.webhook import send_webhooks
 
 
@@ -162,6 +162,7 @@ def main():
         (functools.partial(generate_html, language='ja'), "index.ja.html"),
         (functools.partial(generate_textmeshpro_text, language='en'), "textmeshpro.en.txt"),
         (functools.partial(generate_textmeshpro_text, language='ja'), "textmeshpro.ja.txt"),
+        (generate_textmeshpro_special, "textmeshpro.special.txt"),
         (send_webhooks, "webhook.json"),
     ]
 

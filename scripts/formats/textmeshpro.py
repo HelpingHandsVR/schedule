@@ -22,6 +22,15 @@ DISPLAY_TIMEZONES = [ZoneInfo(iana) for iana in [
     "Asia/Tokyo",
 ]]
 
+HEADER_EN = """
+<align=center><size=125%>Helping Hands Schedule</size></align>
+""".strip()
+
+HEADER_JA = """
+<align=center><size=125%>Helping Hands スケジュール</size></align>
+""".strip()
+
+HEADERS = {"en": HEADER_EN, "ja": HEADER_JA}
 
 EVENT_TEXT_EN = """
 <b>{event_name}</b> <size=70%>with {presenter}</size><size=60%>
@@ -70,4 +79,58 @@ def generate_textmeshpro_text(event_lanes: list[EventLane], language: str = "en"
 
     manifest.sort(key=lambda pair: pair[1])
 
-    return "\n\n".join(pair[0] for pair in manifest)
+    return HEADERS[language] + "\n\n" + "\n\n".join(pair[0] for pair in manifest)
+
+
+HEADER_SPECIAL = """
+<align=center><size=125%>- Helping Hands Schedule -</size></align>
+<align=center><size=125%>- Helping Hands スケジュール -</size></align>
+""".strip()
+
+WEEKNAMES_SPECIAL = [chr(0xE000 + x) for x in range(7)]
+
+DISPLAY_TIMEZONES_SPECIAL = [(ZoneInfo(iana), alpha) for (iana, alpha) in [
+    ("America/Los_Angeles", ""),
+    ("America/Chicago", ""),
+    ("America/New_York", ""),
+    ("Europe/London", ""),
+    ("Europe/Paris", ""),
+    ("Australia/Perth", ""),
+    ("Asia/Tokyo", "\uE00A"),
+]]
+
+EVENT_TEXT_SPECIAL = """
+<size=120%>\uE00B</size> <b>{event_name}</b>       <size=70%>担当者/Presenter</size> {presenter}<size=60%>
+{timezones}
+</size>
+""".strip()
+
+
+def generate_textmeshpro_special(event_lanes: list[EventLane]) -> str:
+    now = datetime.datetime.now(datetime.UTC)
+    manifest: typing.List[typing.Tuple[str, int]] = []
+
+    for event_lane in event_lanes:
+        for event in event_lane.events:
+            next_occurrence = event.next_occurrence_after(now)
+
+            if next_occurrence is None:
+                continue
+
+            manifest.append((
+                EVENT_TEXT_SPECIAL.format(**{
+                    "event_name": event.name,
+                    "presenter": event.host,
+                    "root_timezone": event.timezone,
+                    "timezones": textwrap.indent("\n".join(
+                        f"{WEEKNAMES_SPECIAL[next_occurrence.astimezone(tz).weekday()]} {next_occurrence.astimezone(tz).strftime('%H:%M')} {next_occurrence.astimezone(tz).tzname()}  {alpha}"
+                        for (tz, alpha) in DISPLAY_TIMEZONES_SPECIAL
+                    ), "        ")
+                }),
+                int((next_occurrence - now).total_seconds() * 1000)
+            ))
+
+
+    manifest.sort(key=lambda pair: pair[1])
+
+    return HEADER_SPECIAL + "\n\n" + "\n\n".join(pair[0] for pair in manifest)
