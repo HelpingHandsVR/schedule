@@ -85,6 +85,7 @@ def generate_textmeshpro_text(event_lanes: list[EventLane], language: str = "en"
 HEADER_SPECIAL = """
 <align=center><size=125%>- Helping Hands Schedule -</size></align>
 <align=center><size=125%>- Helping Hands スケジュール -</size></align>
+<align=center><size=60%>Updated/更新時間: {update_time}</size></align>
 """.strip()
 
 WEEKNAMES_SPECIAL = [chr(0xE000 + x) for x in range(7)]
@@ -132,4 +133,4 @@ def generate_textmeshpro_special(event_lanes: list[EventLane]) -> str:
 
     manifest.sort(key=lambda pair: pair[1])
 
-    return HEADER_SPECIAL + "\n\n" + "\n\n".join(pair[0] for pair in manifest)
+    return HEADER_SPECIAL.format(update_time=f"{now:%Y-%m-%d %H:%M} {now.tzname()}") + "\n\n" + "\n\n".join(pair[0] for pair in manifest)
