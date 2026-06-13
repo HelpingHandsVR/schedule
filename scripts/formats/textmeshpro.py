@@ -98,6 +98,7 @@ DISPLAY_TIMEZONES_SPECIAL = [(ZoneInfo(iana), alpha) for (iana, alpha) in [
     ("Europe/Paris", ""),
     ("Australia/Perth", ""),
     ("Asia/Tokyo", "\uE00A"),
+    ("Australia/Brisbane", ""),
 ]]
 
 EVENT_TEXT_SPECIAL = """
@@ -117,15 +118,22 @@ def generate_textmeshpro_special(event_lanes: list[EventLane]) -> str:
             if next_occurrence is None:
                 continue
 
+            timezones = [
+                f"{WEEKNAMES_SPECIAL[next_occurrence.astimezone(tz).weekday()]} {next_occurrence.astimezone(tz).strftime('%H:%M')} {next_occurrence.astimezone(tz).tzname()}  {alpha}"
+                for (tz, alpha) in DISPLAY_TIMEZONES_SPECIAL
+            ]
+
+            paired_timezones = [
+                "            " + timezones[i] + " <pos=45%>" + timezones[i + int(len(timezones) / 2)] + "</pos>"
+                for i in range(0, int(len(timezones) / 2))
+            ]
+
             manifest.append((
                 EVENT_TEXT_SPECIAL.format(**{
                     "event_name": event.name,
                     "presenter": event.host,
                     "root_timezone": event.timezone,
-                    "timezones": textwrap.indent("\n".join(
-                        f"{WEEKNAMES_SPECIAL[next_occurrence.astimezone(tz).weekday()]} {next_occurrence.astimezone(tz).strftime('%H:%M')} {next_occurrence.astimezone(tz).tzname()}  {alpha}"
-                        for (tz, alpha) in DISPLAY_TIMEZONES_SPECIAL
-                    ), "            ")
+                    "timezones": "\n".join(paired_timezones)
                 }),
                 int((next_occurrence - now).total_seconds() * 1000)
             ))
