@@ -3,6 +3,10 @@
 
 {% block content %}
 <h1>Helping Hands schedule (generated {{ generation_time }})</h1>
+<p>
+    This page is primarily intended for developer convenience.
+    Go to <a href="https://helpinghands.gg/events">the website</a> or <a href="https://discord.gg/helpinghands">the Discord</a> for more accurate events info.
+</p>
 <hr>
 <ul>
     {%- for event in manifest %}
@@ -11,6 +15,7 @@
         <div class="event-content">
             <span><b>{{ event.event_name }}</b></span>
             <span> with  {{ event.presenter }}</span>
+            <span><i> defined in <a href="https://github.com/HelpingHandsVR/schedule/blob/main/templates/{{ event.event_lane }}/events.yaml" target="_blank">{{ event.event_lane }}</a></i></span>
 
             {%- for timezone in event.timezones %}
             <p>{{ timezone }}</p>
@@ -20,4 +25,12 @@
     {%- endfor %}
 </ul>
 <hr>
+<h2>Other formats available</h2>
+<ul>
+    {%- for format in output_formats %}
+    <li>
+        <a href="{{ format[1] }}">{{ format[1] }}</a>
+    </li>
+    {%- endfor %}
+</ul>
 {% endblock %}

@@ -51,6 +51,7 @@ def generate_html(event_lanes: list[EventLane], language: str = "en") -> str:
 
             manifest.append(({
                 "event_name": event.name,
+                "event_lane": event_lane.name,
                 "presenter": event.host,
                 "root_timezone": event.timezone,
                 "timezones": [
@@ -62,4 +63,10 @@ def generate_html(event_lanes: list[EventLane], language: str = "en") -> str:
 
     manifest.sort(key=lambda pair: pair[1])
 
-    return template.render(manifest=[event[0] for event in manifest], generation_time=now.isoformat()) + "\n"
+    from formats.all import OUTPUT_FORMATS
+
+    return template.render(
+        manifest=[event[0] for event in manifest],
+        generation_time=now.isoformat(),
+        output_formats=OUTPUT_FORMATS,
+    ) + "\n"
