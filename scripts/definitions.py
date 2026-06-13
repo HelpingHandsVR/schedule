@@ -44,6 +44,7 @@ class EventLaneRawEventSchedule(typing.TypedDict):
 
 
 class EventLaneRawEvent(typing.TypedDict):
+    __line__: int
     host: str
     name: str
     tags: list[str]
@@ -57,6 +58,7 @@ class EventLaneRawEvents(typing.TypedDict):
 
 @dataclasses.dataclass(frozen=True)
 class EventLaneEvent:
+    defined_line: int
     host: str
     name: str
     tags: list[str]

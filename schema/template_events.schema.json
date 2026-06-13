@@ -6,6 +6,9 @@
             "items": {
                 "$ref": "#/$defs/event"
             }
+        },
+        "__line__": {
+            "type": "integer"
         }
     },
     "additionalProperties": false,

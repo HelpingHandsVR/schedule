@@ -15,7 +15,7 @@
         <div class="event-content">
             <span><b>{{ event.event_name }}</b></span>
             <span> 担当者  {{ event.presenter }}</span>
-            <span><i> <a href="https://github.com/HelpingHandsVR/schedule/blob/main/templates/{{ event.event_lane }}/events.yaml" target="_blank">{{ event.event_lane }}</a>内で定義</i></span>
+            <span><i> <a href="https://github.com/HelpingHandsVR/schedule/blob/main/templates/{{ event.event_lane }}/events.yaml#L{{ event.line_number }}" target="_blank">{{ event.event_lane }}</a>内で定義</i></span>
 
             {%- for timezone in event.timezones %}
             <p>{{ timezone }}</p>

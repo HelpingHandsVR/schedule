@@ -52,6 +52,7 @@ def generate_html(event_lanes: list[EventLane], language: str = "en") -> str:
             manifest.append(({
                 "event_name": event.name,
                 "event_lane": event_lane.name,
+                "line_number": event.defined_line,
                 "presenter": event.host,
                 "root_timezone": event.timezone,
                 "timezones": [

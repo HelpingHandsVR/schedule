@@ -53,8 +53,13 @@
                 "localized_name": {
                     "type": "object",
                     "patternProperties": {
-                        "[a-z]{2}": {
+                        "^[a-z]{2}$": {
                             "type": "string"
+                        }
+                    },
+                    "properties": {
+                        "__line__": {
+                            "type": "integer"
                         }
                     },
                     "additionalProperties": false
