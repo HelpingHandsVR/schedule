@@ -124,7 +124,7 @@ def generate_textmeshpro_special(event_lanes: list[EventLane]) -> str:
             ]
 
             paired_timezones = [
-                "            " + timezones[i] + " <pos=40%>" + timezones[i + int(len(timezones) / 2)] + "</pos>"
+                "            " + timezones[i] + " <pos=35%>" + timezones[i + int(len(timezones) / 2)] + "</pos>"
                 for i in range(0, int(len(timezones) / 2))
             ]
 
