@@ -1,0 +1,161 @@
+<align=center><size=125%>Helping Hands Schedule</size></align>
+
+<b>ASL Class</b> <size=70%>with Amarante</size><size=60%>
+        Sunday 10:00 PDT
+        Sunday 12:00 CDT
+        Sunday 13:00 EDT
+        Sunday 18:00 BST
+        Sunday 19:00 CEST
+        Monday 01:00 AWST
+        Monday 02:00 JST
+</size>
+
+<b>LSF Game Night</b> <size=70%>with XKaijo</size><size=60%>
+        Sunday 12:30 PDT
+        Sunday 14:30 CDT
+        Sunday 15:30 EDT
+        Sunday 20:30 BST
+        Sunday 21:30 CEST
+        Monday 03:30 AWST
+        Monday 04:30 JST
+</size>
+
+<b>KSL Class</b> <size=70%>with Korea_Yujin</size><size=60%>
+        Monday 13:00 PDT
+        Monday 15:00 CDT
+        Monday 16:00 EDT
+        Monday 21:00 BST
+        Monday 22:00 CEST
+        Tuesday 04:00 AWST
+        Tuesday 05:00 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>with Amarante</size><size=60%>
+        Monday 14:00 PDT
+        Monday 16:00 CDT
+        Monday 17:00 EDT
+        Monday 22:00 BST
+        Monday 23:00 CEST
+        Tuesday 05:00 AWST
+        Tuesday 06:00 JST
+</size>
+
+<b>ASL Class for PCVR Users</b> <size=70%>with Ray_is_Deaf</size><size=60%>
+        Tuesday 11:00 PDT
+        Tuesday 13:00 CDT
+        Tuesday 14:00 EDT
+        Tuesday 19:00 BST
+        Tuesday 20:00 CEST
+        Wednesday 02:00 AWST
+        Wednesday 03:00 JST
+</size>
+
+<b>LSF Basic Class</b> <size=70%>with XKaijo</size><size=60%>
+        Tuesday 12:30 PDT
+        Tuesday 14:30 CDT
+        Tuesday 15:30 EDT
+        Tuesday 20:30 BST
+        Tuesday 21:30 CEST
+        Wednesday 03:30 AWST
+        Wednesday 04:30 JST
+</size>
+
+<b>ASL Class for Quest/Android Users</b> <size=70%>with Ray_is_Deaf</size><size=60%>
+        Tuesday 14:00 PDT
+        Tuesday 16:00 CDT
+        Tuesday 17:00 EDT
+        Tuesday 22:00 BST
+        Tuesday 23:00 CEST
+        Wednesday 05:00 AWST
+        Wednesday 06:00 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>with Fearlesskoolaid</size><size=60%>
+        Thursday 18:00 PDT
+        Thursday 20:00 CDT
+        Thursday 21:00 EDT
+        Friday 02:00 BST
+        Friday 03:00 CEST
+        Friday 09:00 AWST
+        Friday 10:00 JST
+</size>
+
+<b>LSF Class</b> <size=70%>with XKaijo</size><size=60%>
+        Friday 12:30 PDT
+        Friday 14:30 CDT
+        Friday 15:30 EDT
+        Friday 20:30 BST
+        Friday 21:30 CEST
+        Saturday 03:30 AWST
+        Saturday 04:30 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>with Undeadsee</size><size=60%>
+        Friday 17:00 PDT
+        Friday 19:00 CDT
+        Friday 20:00 EDT
+        Saturday 01:00 BST
+        Saturday 02:00 CEST
+        Saturday 08:00 AWST
+        Saturday 09:00 JST
+</size>
+
+<b>Game Night</b> <size=70%>with Fearlesskoolaid</size><size=60%>
+        Friday 18:00 PDT
+        Friday 20:00 CDT
+        Friday 21:00 EDT
+        Saturday 02:00 BST
+        Saturday 03:00 CEST
+        Saturday 09:00 AWST
+        Saturday 10:00 JST
+</size>
+
+<b>DGS Class</b> <size=70%>with deaf_danielo_89</size><size=60%>
+        Saturday 14:00 PDT
+        Saturday 16:00 CDT
+        Saturday 17:00 EDT
+        Saturday 22:00 BST
+        Saturday 23:00 CEST
+        Sunday 05:00 AWST
+        Sunday 06:00 JST
+</size>
+
+<b>BSL Class</b> <size=70%>with AvinouSCAC</size><size=60%>
+        Saturday 14:00 PDT
+        Saturday 16:00 CDT
+        Saturday 17:00 EDT
+        Saturday 22:00 BST
+        Saturday 23:00 CEST
+        Sunday 05:00 AWST
+        Sunday 06:00 JST
+</size>
+
+<b>ASL Class</b> <size=70%>with Crow_Se7en</size><size=60%>
+        Saturday 16:30 PDT
+        Saturday 18:30 CDT
+        Saturday 19:30 EDT
+        Sunday 00:30 BST
+        Sunday 01:30 CEST
+        Sunday 07:30 AWST
+        Sunday 08:30 JST
+</size>
+
+<b>JSL Class</b> <size=70%>with ラファエルRafael</size><size=60%>
+        Saturday 17:30 PDT
+        Saturday 19:30 CDT
+        Saturday 20:30 EDT
+        Sunday 01:30 BST
+        Sunday 02:30 CEST
+        Sunday 08:30 AWST
+        Sunday 09:30 JST
+</size>
+
+<b>IRL ASL Class</b> <size=70%>with ZadeTheCheetah</size><size=60%>
+        Saturday 17:30 PDT
+        Saturday 19:30 CDT
+        Saturday 20:30 EDT
+        Sunday 01:30 BST
+        Sunday 02:30 CEST
+        Sunday 08:30 AWST
+        Sunday 09:30 JST
+</size>

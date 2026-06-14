@@ -1,0 +1,161 @@
+<align=center><size=125%>Helping Hands スケジュール</size></align>
+
+<b>ASL Class</b> <size=70%>担当者 Amarante</size><size=60%>
+        日曜日 10:00 PDT
+        日曜日 12:00 CDT
+        日曜日 13:00 EDT
+        日曜日 18:00 BST
+        日曜日 19:00 CEST
+        月曜日 01:00 AWST
+        月曜日 02:00 JST
+</size>
+
+<b>LSF Game Night</b> <size=70%>担当者 XKaijo</size><size=60%>
+        日曜日 12:30 PDT
+        日曜日 14:30 CDT
+        日曜日 15:30 EDT
+        日曜日 20:30 BST
+        日曜日 21:30 CEST
+        月曜日 03:30 AWST
+        月曜日 04:30 JST
+</size>
+
+<b>KSL Class</b> <size=70%>担当者 Korea_Yujin</size><size=60%>
+        月曜日 13:00 PDT
+        月曜日 15:00 CDT
+        月曜日 16:00 EDT
+        月曜日 21:00 BST
+        月曜日 22:00 CEST
+        火曜日 04:00 AWST
+        火曜日 05:00 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>担当者 Amarante</size><size=60%>
+        月曜日 14:00 PDT
+        月曜日 16:00 CDT
+        月曜日 17:00 EDT
+        月曜日 22:00 BST
+        月曜日 23:00 CEST
+        火曜日 05:00 AWST
+        火曜日 06:00 JST
+</size>
+
+<b>ASL Class for PCVR Users</b> <size=70%>担当者 Ray_is_Deaf</size><size=60%>
+        火曜日 11:00 PDT
+        火曜日 13:00 CDT
+        火曜日 14:00 EDT
+        火曜日 19:00 BST
+        火曜日 20:00 CEST
+        水曜日 02:00 AWST
+        水曜日 03:00 JST
+</size>
+
+<b>LSF Basic Class</b> <size=70%>担当者 XKaijo</size><size=60%>
+        火曜日 12:30 PDT
+        火曜日 14:30 CDT
+        火曜日 15:30 EDT
+        火曜日 20:30 BST
+        火曜日 21:30 CEST
+        水曜日 03:30 AWST
+        水曜日 04:30 JST
+</size>
+
+<b>ASL Class for Quest/Android Users</b> <size=70%>担当者 Ray_is_Deaf</size><size=60%>
+        火曜日 14:00 PDT
+        火曜日 16:00 CDT
+        火曜日 17:00 EDT
+        火曜日 22:00 BST
+        火曜日 23:00 CEST
+        水曜日 05:00 AWST
+        水曜日 06:00 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>担当者 Fearlesskoolaid</size><size=60%>
+        木曜日 18:00 PDT
+        木曜日 20:00 CDT
+        木曜日 21:00 EDT
+        金曜日 02:00 BST
+        金曜日 03:00 CEST
+        金曜日 09:00 AWST
+        金曜日 10:00 JST
+</size>
+
+<b>LSF Class</b> <size=70%>担当者 XKaijo</size><size=60%>
+        金曜日 12:30 PDT
+        金曜日 14:30 CDT
+        金曜日 15:30 EDT
+        金曜日 20:30 BST
+        金曜日 21:30 CEST
+        土曜日 03:30 AWST
+        土曜日 04:30 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>担当者 Undeadsee</size><size=60%>
+        金曜日 17:00 PDT
+        金曜日 19:00 CDT
+        金曜日 20:00 EDT
+        土曜日 01:00 BST
+        土曜日 02:00 CEST
+        土曜日 08:00 AWST
+        土曜日 09:00 JST
+</size>
+
+<b>Game Night</b> <size=70%>担当者 Fearlesskoolaid</size><size=60%>
+        金曜日 18:00 PDT
+        金曜日 20:00 CDT
+        金曜日 21:00 EDT
+        土曜日 02:00 BST
+        土曜日 03:00 CEST
+        土曜日 09:00 AWST
+        土曜日 10:00 JST
+</size>
+
+<b>DGS Class</b> <size=70%>担当者 deaf_danielo_89</size><size=60%>
+        土曜日 14:00 PDT
+        土曜日 16:00 CDT
+        土曜日 17:00 EDT
+        土曜日 22:00 BST
+        土曜日 23:00 CEST
+        日曜日 05:00 AWST
+        日曜日 06:00 JST
+</size>
+
+<b>BSL Class</b> <size=70%>担当者 AvinouSCAC</size><size=60%>
+        土曜日 14:00 PDT
+        土曜日 16:00 CDT
+        土曜日 17:00 EDT
+        土曜日 22:00 BST
+        土曜日 23:00 CEST
+        日曜日 05:00 AWST
+        日曜日 06:00 JST
+</size>
+
+<b>ASL Class</b> <size=70%>担当者 Crow_Se7en</size><size=60%>
+        土曜日 16:30 PDT
+        土曜日 18:30 CDT
+        土曜日 19:30 EDT
+        日曜日 00:30 BST
+        日曜日 01:30 CEST
+        日曜日 07:30 AWST
+        日曜日 08:30 JST
+</size>
+
+<b>JSL Class</b> <size=70%>担当者 ラファエルRafael</size><size=60%>
+        土曜日 17:30 PDT
+        土曜日 19:30 CDT
+        土曜日 20:30 EDT
+        日曜日 01:30 BST
+        日曜日 02:30 CEST
+        日曜日 08:30 AWST
+        日曜日 09:30 JST
+</size>
+
+<b>IRL ASL Class</b> <size=70%>担当者 ZadeTheCheetah</size><size=60%>
+        土曜日 17:30 PDT
+        土曜日 19:30 CDT
+        土曜日 20:30 EDT
+        日曜日 01:30 BST
+        日曜日 02:30 CEST
+        日曜日 08:30 AWST
+        日曜日 09:30 JST
+</size>
