@@ -4,7 +4,9 @@ events:
   # Friday
   - host: Fearlesskoolaid
     name: Game Night
-    tags: ["game_night"]
+    tags:
+      - event:game_night
+      - platform:vrchat
     schedule:
       timezone: America/Chicago
       basis: "2025-03-14"

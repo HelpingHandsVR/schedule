@@ -4,7 +4,10 @@ events:
   # Monday
   - host: Korea_Yujin
     name: "KSL Class"
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:ksl
     schedule:
       basis: "2026-01-06"
       day: Tuesday

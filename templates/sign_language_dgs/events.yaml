@@ -4,7 +4,10 @@ events:
   # Saturday
   - host: deaf_danielo_89
     name: "DGS Class"
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:dgs
     schedule:
       basis: "2025-03-15"
       day: Saturday

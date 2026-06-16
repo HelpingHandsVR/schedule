@@ -4,7 +4,10 @@ events:
   # Monday
   - host: Amarante
     name: ASL Sign Zone
-    tags: ["sign_zone"]
+    tags:
+      - event:sign_zone
+      - platform:vrchat
+      - language:asl
     schedule:
       basis: "2025-03-10"
       day: Monday
@@ -13,8 +16,12 @@ events:
 
   # Tuesday
   - host: Ray_is_Deaf
-    name: ASL Class for PCVR Users
-    tags: ["class", "target:pcvr"]
+    name: ASL Class
+    tags:
+      - event:class
+      - platform:vrchat
+      - vr:pc
+      - language:asl
     schedule:
       basis: "2026-03-10"
       not_before: "2026-03-10"
@@ -23,8 +30,12 @@ events:
       minute: 0
 
   - host: Ray_is_Deaf
-    name: ASL Class for Quest/Android Users
-    tags: ["class", "target:questvr"]
+    name: ASL Class
+    tags:
+      - event:class
+      - platform:vrchat
+      - vr:quest
+      - language:asl
     schedule:
       basis: "2026-03-10"
       not_before: "2026-03-10"
@@ -35,7 +46,10 @@ events:
   # Thursday
   - host: Fearlesskoolaid
     name: ASL Sign Zone
-    tags: ["sign_zone"]
+    tags:
+      - event:sign_zone
+      - platform:vrchat
+      - language:asl
     schedule:
       timezone: America/Chicago
       basis: "2025-03-13"
@@ -46,7 +60,10 @@ events:
   # Saturday
   - host: ZadeTheCheetah
     name: IRL ASL Class
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:discord
+      - language:asl
     schedule:
       timezone: America/Chicago
       basis: "2026-01-10"
@@ -56,7 +73,10 @@ events:
 
   - host: Crow_Se7en
     name: ASL Class
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:asl
     schedule:
       basis: "2025-03-15"
       day: Saturday
@@ -65,7 +85,10 @@ events:
 
   - host: Undeadsee
     name: ASL Sign Zone
-    tags: ["sign_zone"]
+    tags:
+      - event:sign_zone
+      - platform:vrchat
+      - language:asl
     schedule:
       timezone: Australia/Brisbane
       basis: "2025-03-15"
@@ -75,7 +98,10 @@ events:
 
   - host: Amarante
     name: ASL Class
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:asl
     schedule:
       basis: "2026-03-22"
       not_before: "2026-03-22"

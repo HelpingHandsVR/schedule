@@ -4,7 +4,10 @@ events:
   # Sunday
   - host: ラファエルRafael
     name: "JSL Class"
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:jsl
     schedule:
       basis: "2025-03-09"
       day: Sunday

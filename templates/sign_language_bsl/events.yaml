@@ -4,7 +4,10 @@ events:
   # Saturday
   - host: AvinouSCAC
     name: "BSL Class"
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:bsl
     schedule:
       basis: "2025-03-15"
       day: Saturday
