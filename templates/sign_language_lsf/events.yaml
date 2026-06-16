@@ -33,6 +33,7 @@ events:
     name: "LSF Game Night"
     tags:
       - event:game_night
+      - platform:vrchat
       - language:lsf
     schedule:
       basis: "2025-03-09"

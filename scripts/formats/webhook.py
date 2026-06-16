@@ -190,37 +190,38 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
             ]
 
 
-            for (event, next_occurrence) in events_by_day[weekday_offset]:
-                hour_time = (next_occurrence.hour + (next_occurrence.minute / 60)) % 12
-                emoji = min(CLOCK_EMOJIS, key=lambda pair: abs(pair[0] - hour_time))[1]
+            if events_by_day[weekday_offset]:
+                for (event, next_occurrence) in events_by_day[weekday_offset]:
+                    hour_time = (next_occurrence.hour + (next_occurrence.minute / 60)) % 12
+                    emoji = min(CLOCK_EMOJIS, key=lambda pair: abs(pair[0] - hour_time))[1]
 
-                target_timezones = []
+                    target_timezones = []
 
-                for flag, target_timezone in TIMEZONE_PAIRS:
-                    as_target = next_occurrence.astimezone(target_timezone)
-                    flag = to_regionals(flag)
+                    for flag, target_timezone in TIMEZONE_PAIRS:
+                        as_target = next_occurrence.astimezone(target_timezone)
+                        flag = to_regionals(flag)
 
-                    if as_target.day != day.day:
-                        target_timezones.append(f'\u200b    {flag}  {as_target.strftime("%I:%M %p")} {as_target.tzname()} ({as_target.strftime("%a")})')
-                    else:
-                        target_timezones.append(f'\u200b    {flag}  {as_target.strftime("%I:%M %p")} {as_target.tzname()}')
+                        if as_target.day != day.day:
+                            target_timezones.append(f'\u200b    {flag}  {as_target.strftime("%I:%M %p")} {as_target.tzname()} ({as_target.strftime("%a")})')
+                        else:
+                            target_timezones.append(f'\u200b    {flag}  {as_target.strftime("%I:%M %p")} {as_target.tzname()}')
 
-                tags: typing.List[str] = []
+                    tags: typing.List[str] = []
 
-                for tag in event.tags:
-                    tag_header, _tag_content = tag.split(":")
+                    for tag in event.tags:
+                        tag_header, _tag_content = tag.split(":")
 
-                    if tag in TAG_DESCRIPTIONS_EN and tag_header in TAG_HEADINGS_EN:
-                        tags.append(f"{TAG_HEADING_EMOJIS.get(tag_header, DEFAULT_TAG_HEADING_EMOJI)} **{TAG_HEADINGS_EN[tag_header]}**: {TAG_DESCRIPTIONS_EN[tag]}")
+                        if tag in TAG_DESCRIPTIONS_EN and tag_header in TAG_HEADINGS_EN:
+                            tags.append(f"{TAG_HEADING_EMOJIS.get(tag_header, DEFAULT_TAG_HEADING_EMOJI)} **{TAG_HEADINGS_EN[tag_header]}**: {TAG_DESCRIPTIONS_EN[tag]}")
 
-                tag_line = "-# " + " \N{KATAKANA MIDDLE DOT} ".join(tags) + "\n" if tags else ""
+                    tag_line = "-# " + " \N{KATAKANA MIDDLE DOT} ".join(tags) + "\n" if tags else ""
 
-                description_parts.append(
-                    f"**{event.name}** with {event.host}\n"
-                    f"{tag_line}"
-                    f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')} ({discord.utils.format_dt(next_occurrence, 'R')})\n"
-                    f"{'\n'.join(target_timezones)}"
-                )
+                    description_parts.append(
+                        f"**{event.name}** with {event.host}\n"
+                        f"{tag_line}"
+                        f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')} ({discord.utils.format_dt(next_occurrence, 'R')})\n"
+                        f"{'\n'.join(target_timezones)}"
+                    )
             else:
                 description_parts.append("-# -- No events this day. --")
 
