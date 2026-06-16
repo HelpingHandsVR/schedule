@@ -213,7 +213,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                     if tag in TAG_DESCRIPTIONS_EN and tag_header in TAG_HEADINGS_EN:
                         tags.append(f"{TAG_HEADING_EMOJIS.get(tag_header, DEFAULT_TAG_HEADING_EMOJI)} **{TAG_HEADINGS_EN[tag_header]}**: {TAG_DESCRIPTIONS_EN[tag]}")
 
-                tag_line = "-# " + " ** ** ".join(tags) + "\n" if tags else ""
+                tag_line = "-# " + " \N{KATAKANA MIDDLE DOT} ".join(tags) + "\n" if tags else ""
 
                 description_parts.append(
                     f"**{event.name}** with {event.host}\n"
