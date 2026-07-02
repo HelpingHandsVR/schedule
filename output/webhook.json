@@ -1,0 +1,390 @@
+{
+  "server_misc": {
+    "message_id": 1380442773009858602,
+    "embeds": [
+      {
+        "flags": 0,
+        "color": 16711422,
+        "type": "rich",
+        "description": "# Miscellaneous Schedule\n\nThis schedule shows any miscellaneous events we do that aren't specific to any sign language.\n"
+      },
+      {
+        "flags": 0,
+        "color": 16711680,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Monday (2026-06-29)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16767488,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Tuesday (2026-06-30)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 4783872,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Wednesday (2026-07-01)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 65425,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Thursday (2026-07-02)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 37375,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Friday (2026-07-03)\n\n**Game Night** with Fearlesskoolaid\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd57 <t:1783126800:f> (<t:1783126800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:00 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  06:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  01:00 AM UTC (Sat)\n\u200b    \ud83c\uddec\ud83c\udde7  02:00 AM BST (Sat)\n\u200b    \ud83c\uddeb\ud83c\uddf7  03:00 AM CEST (Sat)\n\u200b    \ud83c\udde6\ud83c\uddfa  11:00 AM AEST (Sat)\n\u200b    \ud83c\uddf0\ud83c\uddf7  10:00 AM KST (Sat)"
+      },
+      {
+        "flags": 0,
+        "color": 4718847,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Saturday (2026-07-04)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16711898,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Sunday (2026-07-05)\n\n-# -- No events this day. --"
+      }
+    ]
+  },
+  "server_global": {
+    "message_id": 1359291126225309726,
+    "embeds": [
+      {
+        "flags": 0,
+        "color": 16711422,
+        "type": "rich",
+        "description": "# Global Schedule\n\nThis schedule shows a combined view of all the events in the server.\n"
+      },
+      {
+        "flags": 0,
+        "color": 16711680,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Monday (2026-06-29)\n\n**KSL Class** with Korea_Yujin\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd54 <t:1782763200:f> (<t:1782763200:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  10:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  01:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  08:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  09:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  10:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  06:00 AM AEST (Tue)\n\u200b    \ud83c\uddf0\ud83c\uddf7  05:00 AM KST (Tue)\n\n**ASL Sign Zone** with Amarante\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd54 <t:1782766800:f> (<t:1782766800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  09:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  10:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  11:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  07:00 AM AEST (Tue)\n\u200b    \ud83c\uddf0\ud83c\uddf7  06:00 AM KST (Tue)"
+      },
+      {
+        "flags": 0,
+        "color": 16767488,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Tuesday (2026-06-30)\n\n**ASL Class** with Ray_is_Deaf\n-# \ud83d\udcbb **Platform**: VRChat \u30fb \ud83e\udd7d **VR**: PCVR\n\u200b    \ud83d\udd51 <t:1782842400:f> (<t:1782842400:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  01:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  06:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  07:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  08:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  04:00 AM AEST (Wed)\n\u200b    \ud83c\uddf0\ud83c\uddf7  03:00 AM KST (Wed)\n\n**LSF Class** with XKaijo\n-# \ud83d\udcbb **Platform**: VRChat \u30fb \ud83d\udc65 **Audience**: Beginners\n\u200b    \ud83d\udd64 <t:1782847800:f> (<t:1782847800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:30 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  12:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  07:30 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  08:30 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  09:30 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  05:30 AM AEST (Wed)\n\u200b    \ud83c\uddf0\ud83c\uddf7  04:30 AM KST (Wed)\n\n**ASL Class** with Ray_is_Deaf\n-# \ud83d\udcbb **Platform**: VRChat \u30fb \ud83e\udd7d **VR**: Quest VR\n\u200b    \ud83d\udd54 <t:1782853200:f> (<t:1782853200:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  09:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  10:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  11:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  07:00 AM AEST (Wed)\n\u200b    \ud83c\uddf0\ud83c\uddf7  06:00 AM KST (Wed)"
+      },
+      {
+        "flags": 0,
+        "color": 4783872,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Wednesday (2026-07-01)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 65425,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Thursday (2026-07-02)\n\n**ASL Sign Zone** with Fearlesskoolaid\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd57 <t:1783040400:f> (<t:1783040400:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:00 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  06:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  01:00 AM UTC (Fri)\n\u200b    \ud83c\uddec\ud83c\udde7  02:00 AM BST (Fri)\n\u200b    \ud83c\uddeb\ud83c\uddf7  03:00 AM CEST (Fri)\n\u200b    \ud83c\udde6\ud83c\uddfa  11:00 AM AEST (Fri)\n\u200b    \ud83c\uddf0\ud83c\uddf7  10:00 AM KST (Fri)"
+      },
+      {
+        "flags": 0,
+        "color": 37375,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Friday (2026-07-03)\n\n**LSF Class** with XKaijo\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd64 <t:1783107000:f> (<t:1783107000:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:30 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  12:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  07:30 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  08:30 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  09:30 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  05:30 AM AEST (Sat)\n\u200b    \ud83c\uddf0\ud83c\uddf7  04:30 AM KST (Sat)\n\n**ASL Sign Zone** with Undeadsee\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd59 <t:1783123200:f> (<t:1783123200:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  12:00 AM UTC (Sat)\n\u200b    \ud83c\uddec\ud83c\udde7  01:00 AM BST (Sat)\n\u200b    \ud83c\uddeb\ud83c\uddf7  02:00 AM CEST (Sat)\n\u200b    \ud83c\udde6\ud83c\uddfa  10:00 AM AEST (Sat)\n\u200b    \ud83c\uddf0\ud83c\uddf7  09:00 AM KST (Sat)\n\n**Game Night** with Fearlesskoolaid\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd57 <t:1783126800:f> (<t:1783126800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:00 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  06:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  01:00 AM UTC (Sat)\n\u200b    \ud83c\uddec\ud83c\udde7  02:00 AM BST (Sat)\n\u200b    \ud83c\uddeb\ud83c\uddf7  03:00 AM CEST (Sat)\n\u200b    \ud83c\udde6\ud83c\uddfa  11:00 AM AEST (Sat)\n\u200b    \ud83c\uddf0\ud83c\uddf7  10:00 AM KST (Sat)"
+      },
+      {
+        "flags": 0,
+        "color": 4718847,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Saturday (2026-07-04)\n\n**DGS Class** with deaf_danielo_89\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd5a <t:1783198800:f> (<t:1783198800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  09:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  10:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  11:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  07:00 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  06:00 AM KST (Sun)\n\n**BSL Class** with AvinouSCAC\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd59 <t:1783198800:f> (<t:1783198800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  09:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  10:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  11:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  07:00 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  06:00 AM KST (Sun)\n\n**ASL Class** with Crow_Se7en\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd62 <t:1783207800:f> (<t:1783207800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  01:30 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  06:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  11:30 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  12:30 AM BST (Sun)\n\u200b    \ud83c\uddeb\ud83c\uddf7  01:30 AM CEST (Sun)\n\u200b    \ud83c\udde6\ud83c\uddfa  09:30 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  08:30 AM KST (Sun)\n\n**JSL Class** with \u30e9\u30d5\u30a1\u30a8\u30ebRafael\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd64 <t:1783211400:f> (<t:1783211400:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  12:30 AM UTC (Sun)\n\u200b    \ud83c\uddec\ud83c\udde7  01:30 AM BST (Sun)\n\u200b    \ud83c\uddeb\ud83c\uddf7  02:30 AM CEST (Sun)\n\u200b    \ud83c\udde6\ud83c\uddfa  10:30 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  09:30 AM KST (Sun)\n\n**IRL ASL Class** with ZadeTheCheetah\n-# \ud83d\udcbb **Platform**: Discord\n\u200b    \ud83d\udd62 <t:1783211400:f> (<t:1783211400:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  12:30 AM UTC (Sun)\n\u200b    \ud83c\uddec\ud83c\udde7  01:30 AM BST (Sun)\n\u200b    \ud83c\uddeb\ud83c\uddf7  02:30 AM CEST (Sun)\n\u200b    \ud83c\udde6\ud83c\uddfa  10:30 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  09:30 AM KST (Sun)"
+      },
+      {
+        "flags": 0,
+        "color": 16711898,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Sunday (2026-07-05)\n\n**ASL Class** with Amarante\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd50 <t:1783270800:f> (<t:1783270800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  10:00 AM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  12:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  01:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  05:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  06:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  07:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  03:00 AM AEST (Mon)\n\u200b    \ud83c\uddf0\ud83c\uddf7  02:00 AM KST (Mon)\n\n**LSF Game Night** with XKaijo\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd64 <t:1783279800:f> (<t:1783279800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:30 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  12:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  07:30 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  08:30 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  09:30 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  05:30 AM AEST (Mon)\n\u200b    \ud83c\uddf0\ud83c\uddf7  04:30 AM KST (Mon)"
+      }
+    ]
+  },
+  "sign_language_ksl": {
+    "message_id": 1359291123826298952,
+    "embeds": [
+      {
+        "flags": 0,
+        "color": 16711680,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Monday (2026-06-29)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16767488,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Tuesday (2026-06-30)\n\n**KSL Class** with Korea_Yujin\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd54 <t:1782763200:f> (<t:1782763200:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  10:00 AM HST (Mon)\n\u200b    \ud83c\uddfa\ud83c\uddf8  01:00 PM PDT (Mon)\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:00 PM CDT (Mon)\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM EDT (Mon)\n\u200b    \ud83c\uddfa\ud83c\uddf3  08:00 PM UTC (Mon)\n\u200b    \ud83c\uddec\ud83c\udde7  09:00 PM BST (Mon)\n\u200b    \ud83c\uddeb\ud83c\uddf7  10:00 PM CEST (Mon)\n\u200b    \ud83c\udde6\ud83c\uddfa  06:00 AM AEST\n\u200b    \ud83c\uddf0\ud83c\uddf7  05:00 AM KST"
+      },
+      {
+        "flags": 0,
+        "color": 4783872,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Wednesday (2026-07-01)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 65425,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Thursday (2026-07-02)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 37375,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Friday (2026-07-03)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 4718847,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Saturday (2026-07-04)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16711898,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Sunday (2026-07-05)\n\n-# -- No events this day. --"
+      }
+    ]
+  },
+  "sign_language_jsl": {
+    "message_id": 1359291122790170807,
+    "embeds": [
+      {
+        "flags": 0,
+        "color": 16711680,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Monday (2026-06-29)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16767488,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Tuesday (2026-06-30)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 4783872,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Wednesday (2026-07-01)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 65425,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Thursday (2026-07-02)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 37375,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Friday (2026-07-03)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 4718847,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Saturday (2026-07-04)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16711898,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Sunday (2026-07-05)\n\n**JSL Class** with \u30e9\u30d5\u30a1\u30a8\u30ebRafael\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd64 <t:1783211400:f> (<t:1783211400:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM HST (Sat)\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:30 PM PDT (Sat)\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:30 PM CDT (Sat)\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:30 PM EDT (Sat)\n\u200b    \ud83c\uddfa\ud83c\uddf3  12:30 AM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  01:30 AM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  02:30 AM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  10:30 AM AEST\n\u200b    \ud83c\uddf0\ud83c\uddf7  09:30 AM KST"
+      }
+    ]
+  },
+  "sign_language_lsf": {
+    "message_id": 1359291127689380021,
+    "embeds": [
+      {
+        "flags": 0,
+        "color": 16711680,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Monday (2026-06-29)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16767488,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Tuesday (2026-06-30)\n\n**LSF Class** with XKaijo\n-# \ud83d\udcbb **Platform**: VRChat \u30fb \ud83d\udc65 **Audience**: Beginners\n\u200b    \ud83d\udd64 <t:1782847800:f> (<t:1782847800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:30 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  12:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  07:30 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  08:30 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  09:30 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  05:30 AM AEST (Wed)\n\u200b    \ud83c\uddf0\ud83c\uddf7  04:30 AM KST (Wed)"
+      },
+      {
+        "flags": 0,
+        "color": 4783872,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Wednesday (2026-07-01)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 65425,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Thursday (2026-07-02)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 37375,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Friday (2026-07-03)\n\n**LSF Class** with XKaijo\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd64 <t:1783107000:f> (<t:1783107000:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:30 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  12:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  07:30 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  08:30 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  09:30 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  05:30 AM AEST (Sat)\n\u200b    \ud83c\uddf0\ud83c\uddf7  04:30 AM KST (Sat)"
+      },
+      {
+        "flags": 0,
+        "color": 4718847,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Saturday (2026-07-04)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16711898,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Sunday (2026-07-05)\n\n**LSF Game Night** with XKaijo\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd64 <t:1783279800:f> (<t:1783279800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:30 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  12:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  07:30 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  08:30 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  09:30 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  05:30 AM AEST (Mon)\n\u200b    \ud83c\uddf0\ud83c\uddf7  04:30 AM KST (Mon)"
+      }
+    ]
+  },
+  "sign_language_dgs": {
+    "message_id": 1359291125470597150,
+    "embeds": [
+      {
+        "flags": 0,
+        "color": 16711680,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Monday (2026-06-29)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16767488,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Tuesday (2026-06-30)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 4783872,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Wednesday (2026-07-01)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 65425,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Thursday (2026-07-02)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 37375,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Friday (2026-07-03)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 4718847,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Saturday (2026-07-04)\n\n**DGS Class** with deaf_danielo_89\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd5a <t:1783198800:f> (<t:1783198800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  09:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  10:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  11:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  07:00 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  06:00 AM KST (Sun)"
+      },
+      {
+        "flags": 0,
+        "color": 16711898,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Sunday (2026-07-05)\n\n-# -- No events this day. --"
+      }
+    ]
+  },
+  "sign_language_bsl": {
+    "message_id": 1359291127009906770,
+    "embeds": [
+      {
+        "flags": 0,
+        "color": 16711680,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Monday (2026-06-29)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 16767488,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Tuesday (2026-06-30)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 4783872,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Wednesday (2026-07-01)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 65425,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Thursday (2026-07-02)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 37375,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Friday (2026-07-03)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 4718847,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Saturday (2026-07-04)\n\n**BSL Class** with AvinouSCAC\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd59 <t:1783198800:f> (<t:1783198800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  09:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  10:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  11:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  07:00 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  06:00 AM KST (Sun)"
+      },
+      {
+        "flags": 0,
+        "color": 16711898,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Sunday (2026-07-05)\n\n-# -- No events this day. --"
+      }
+    ]
+  },
+  "sign_language_asl": {
+    "message_id": 1359291124556239070,
+    "embeds": [
+      {
+        "flags": 0,
+        "color": 16711680,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Monday (2026-06-29)\n\n**ASL Sign Zone** with Amarante\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd54 <t:1782766800:f> (<t:1782766800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  09:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  10:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  11:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  07:00 AM AEST (Tue)\n\u200b    \ud83c\uddf0\ud83c\uddf7  06:00 AM KST (Tue)"
+      },
+      {
+        "flags": 0,
+        "color": 16767488,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Tuesday (2026-06-30)\n\n**ASL Class** with Ray_is_Deaf\n-# \ud83d\udcbb **Platform**: VRChat \u30fb \ud83e\udd7d **VR**: PCVR\n\u200b    \ud83d\udd51 <t:1782842400:f> (<t:1782842400:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  01:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  06:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  07:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  08:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  04:00 AM AEST (Wed)\n\u200b    \ud83c\uddf0\ud83c\uddf7  03:00 AM KST (Wed)\n\n**ASL Class** with Ray_is_Deaf\n-# \ud83d\udcbb **Platform**: VRChat \u30fb \ud83e\udd7d **VR**: Quest VR\n\u200b    \ud83d\udd54 <t:1782853200:f> (<t:1782853200:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  11:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  09:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  10:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  11:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  07:00 AM AEST (Wed)\n\u200b    \ud83c\uddf0\ud83c\uddf7  06:00 AM KST (Wed)"
+      },
+      {
+        "flags": 0,
+        "color": 4783872,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Wednesday (2026-07-01)\n\n-# -- No events this day. --"
+      },
+      {
+        "flags": 0,
+        "color": 65425,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Thursday (2026-07-02)\n\n**ASL Sign Zone** with Fearlesskoolaid\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd57 <t:1783040400:f> (<t:1783040400:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  03:00 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  06:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  09:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  01:00 AM UTC (Fri)\n\u200b    \ud83c\uddec\ud83c\udde7  02:00 AM BST (Fri)\n\u200b    \ud83c\uddeb\ud83c\uddf7  03:00 AM CEST (Fri)\n\u200b    \ud83c\udde6\ud83c\uddfa  11:00 AM AEST (Fri)\n\u200b    \ud83c\uddf0\ud83c\uddf7  10:00 AM KST (Fri)"
+      },
+      {
+        "flags": 0,
+        "color": 37375,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Friday (2026-07-03)\n\n**ASL Sign Zone** with Undeadsee\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd59 <t:1783123200:f> (<t:1783123200:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:00 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:00 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  12:00 AM UTC (Sat)\n\u200b    \ud83c\uddec\ud83c\udde7  01:00 AM BST (Sat)\n\u200b    \ud83c\uddeb\ud83c\uddf7  02:00 AM CEST (Sat)\n\u200b    \ud83c\udde6\ud83c\uddfa  10:00 AM AEST (Sat)\n\u200b    \ud83c\uddf0\ud83c\uddf7  09:00 AM KST (Sat)"
+      },
+      {
+        "flags": 0,
+        "color": 4718847,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Saturday (2026-07-04)\n\n**ASL Class** with Crow_Se7en\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd62 <t:1783207800:f> (<t:1783207800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  01:30 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  04:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  06:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  11:30 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  12:30 AM BST (Sun)\n\u200b    \ud83c\uddeb\ud83c\uddf7  01:30 AM CEST (Sun)\n\u200b    \ud83c\udde6\ud83c\uddfa  09:30 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  08:30 AM KST (Sun)\n\n**IRL ASL Class** with ZadeTheCheetah\n-# \ud83d\udcbb **Platform**: Discord\n\u200b    \ud83d\udd62 <t:1783211400:f> (<t:1783211400:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  02:30 PM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  05:30 PM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:30 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  08:30 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  12:30 AM UTC (Sun)\n\u200b    \ud83c\uddec\ud83c\udde7  01:30 AM BST (Sun)\n\u200b    \ud83c\uddeb\ud83c\uddf7  02:30 AM CEST (Sun)\n\u200b    \ud83c\udde6\ud83c\uddfa  10:30 AM AEST (Sun)\n\u200b    \ud83c\uddf0\ud83c\uddf7  09:30 AM KST (Sun)"
+      },
+      {
+        "flags": 0,
+        "color": 16711898,
+        "type": "rich",
+        "description": "# \ud83d\uddd3 Sunday (2026-07-05)\n\n**ASL Class** with Amarante\n-# \ud83d\udcbb **Platform**: VRChat\n\u200b    \ud83d\udd50 <t:1783270800:f> (<t:1783270800:R>)\n\u200b    \ud83c\uddfa\ud83c\uddf8  07:00 AM HST\n\u200b    \ud83c\uddfa\ud83c\uddf8  10:00 AM PDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  12:00 PM CDT\n\u200b    \ud83c\uddfa\ud83c\uddf8  01:00 PM EDT\n\u200b    \ud83c\uddfa\ud83c\uddf3  05:00 PM UTC\n\u200b    \ud83c\uddec\ud83c\udde7  06:00 PM BST\n\u200b    \ud83c\uddeb\ud83c\uddf7  07:00 PM CEST\n\u200b    \ud83c\udde6\ud83c\uddfa  03:00 AM AEST (Mon)\n\u200b    \ud83c\uddf0\ud83c\uddf7  02:00 AM KST (Mon)"
+      }
+    ]
+  }
+}
