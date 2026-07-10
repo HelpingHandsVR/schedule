@@ -69,6 +69,13 @@ class EventLaneEvent:
     not_before: datetime.date | None
     not_after: datetime.date | None
 
+    def get_tag_group(self, tag_group: str) -> typing.Optional[str]:
+        for tag in self.tags:
+            group, content = tag.split(":")
+
+            if group == tag_group:
+                return content
+
     def next_occurrence_after(self, target: datetime.datetime) -> typing.Optional[datetime.datetime]:
         # If paused, no next occurrence
         if self.paused:

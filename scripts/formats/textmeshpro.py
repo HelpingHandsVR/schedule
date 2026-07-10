@@ -9,7 +9,7 @@ import textwrap
 import typing
 from zoneinfo import ZoneInfo
 
-from definitions import EventLane
+from definitions import EventLane, EventLaneEvent
 
 
 DISPLAY_TIMEZONES = [ZoneInfo(iana) for iana in [
@@ -50,6 +50,40 @@ WEEKNAMES_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturda
 WEEKNAMES_JA = ["月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "日曜日"]
 
 WEEKNAMES = {"en": WEEKNAMES_EN, "ja": WEEKNAMES_JA}
+
+LANGUAGE_GROUPS_JA = {
+    "asl": "アメリカ手話",
+    "bsl": "イギリス手話",
+    "dgs": "ドイツ手話",
+    "jsl": "日本手話",
+    "ksl": "韓国手話",
+    "lsf": "フランス手話",
+}
+
+EVENT_GROUPS_JA = {
+    "class": "クラス",
+    "game_night": "ゲームナイト",
+    "sign_zone": "交流会"
+}
+
+PLATFORM_GROUPS_JA = {
+    "discord": "Discord上"
+}
+
+def format_event_ja(event: EventLaneEvent) -> str:
+    event_type = EVENT_GROUPS_JA.get(event.get_tag_group("event") or "", "イベント")
+    language = LANGUAGE_GROUPS_JA.get(event.get_tag_group("language") or "")
+    platform = PLATFORM_GROUPS_JA.get(event.get_tag_group("platform") or "")
+
+    if language is not None:
+        output = f"{language}の{event_type}"
+    else:
+        output = f"{event_type}"
+
+    if platform is not None:
+        output = f"({platform}) {output}"
+
+    return output
 
 
 def generate_textmeshpro_text(event_lanes: list[EventLane], language: str = "en") -> str:
@@ -102,7 +136,7 @@ DISPLAY_TIMEZONES_SPECIAL = [(ZoneInfo(iana), alpha) for (iana, alpha) in [
 ]]
 
 EVENT_TEXT_SPECIAL = """
-<size=120%>\uE00B</size> <b>{event_name}</b><pos=50%><size=70%>担当者/Presenter: </size> {presenter}</pos>
+<size=120%>\uE00B</size> <b>{event_name}</b><pos=70%><b>{human_time}</b></pos>
 {timezones}
 """.strip()
 
@@ -128,9 +162,29 @@ def generate_textmeshpro_special(event_lanes: list[EventLane]) -> str:
                 for i in range(0, int(len(timezones) / 2))
             ]
 
+            paired_timezones[0] += "<pos=70%><size=50%>担当者/Presenter: </size></pos>"
+            paired_timezones[1] += f"<pos=70%>{event.host}</pos>"
+
+            timezone_ja = ZoneInfo("Asia/Tokyo")
+            time_ja = next_occurrence.astimezone(timezone_ja)
+            timezone_us = ZoneInfo("America/New_York")
+            time_us = next_occurrence.astimezone(timezone_us)
+
+            human_time = f"{time_ja.month}月{time_ja.day}日/{time_us:%b} {time_us.day}" + ({
+                1: "st",
+                2: "nd",
+                3: "rd",
+                21: "st",
+                22: "nd",
+                23: "rd",
+                31: "st",
+            }).get(time_us.day, "th")
+
             manifest.append((
                 EVENT_TEXT_SPECIAL.format(**{
                     "event_name": event.name,
+                    "event_name_ja": format_event_ja(event),
+                    "human_time": human_time,
                     "presenter": event.host,
                     "root_timezone": event.timezone,
                     "timezones": "\n".join(paired_timezones)
