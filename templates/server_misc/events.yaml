@@ -11,3 +11,14 @@ events:
       day: Friday
       hour: 20
       minute: 0
+      
+  # Sunday
+  - host: Ruby Riftwind
+    name: Game Night
+    tags: ["game_night"]
+    schedule:
+      timezone: America/New_York
+      basis: "2026-08-23"
+      day: Sunday
+      hour: 15
+      minute: 0
