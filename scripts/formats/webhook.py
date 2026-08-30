@@ -4,9 +4,10 @@
 Webhook, technically not a format, but allows us to send webhook messages
 """
 
-import datetime
 import collections
+import datetime
 import itertools
+import typing
 from zoneinfo import ZoneInfo
 
 import discord
@@ -18,7 +19,6 @@ def calculate_notable_date_emojis(year: int) -> dict[tuple[int, int], str]:
     notable_date_emojis = {
         (1,  1):  "🎉",   # New Year's Day
         (2,  14): "❤️",   # Valentine’s Day
-        (3,  13): "🦻",   # Start of National Deaf History Month
         (3,  17): "🍀",   # St. Patrick’s Day
         (4,  1):  "🥳",   # April Fools Day
         (4,  8):  "🎓",   # Anniversary of the founding of Gallaudet University
@@ -84,6 +84,32 @@ TIMEZONE_PAIRS = (
     ("KR", ZoneInfo("Asia/Seoul")),
 )
 
+DEFAULT_TAG_HEADING_EMOJI: str = "\N{INFORMATION SOURCE}"
+
+TAG_HEADING_EMOJIS: typing.Dict[str, str] = {
+    "event": "\N{TEAR-OFF CALENDAR}",
+    "platform": "\N{PERSONAL COMPUTER}",
+    "audience": "\N{BUSTS IN SILHOUETTE}",
+    "language": "\N{WORLD MAP}",
+    "vr": "\N{GOGGLES}"
+}
+
+TAG_HEADINGS_EN: typing.Dict[str, str] = {
+    "event": "Event",
+    "platform": "Platform",
+    "audience": "Audience",
+    "language": "Language",
+    "vr": "VR",
+}
+
+TAG_DESCRIPTIONS_EN: typing.Dict[str, str] = {
+    "audience:beginners": "Beginners",
+    "platform:discord": "Discord",
+    "platform:vrchat": "VRChat",
+    "vr:pc": "PCVR",
+    "vr:quest": "Quest VR",
+}
+
 
 def to_regionals(text: str):
     mapping = 0x1f1e6 - 0x61
@@ -96,10 +122,6 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
 
     # Calculate for each event lane, as it changes how we calculate what counts as 'today'
     for event_lane in event_lanes:
-        # We can't work with no webhook..
-        if not event_lane.webhook:
-            continue
-
         # Use New York time at 5am
         event_lane_zone = ZoneInfo(event_lane.meta["default_timezone"])
         now = datetime.datetime.now(event_lane_zone)
@@ -167,6 +189,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                 title,
             ]
 
+
             if events_by_day[weekday_offset]:
                 for (event, next_occurrence) in events_by_day[weekday_offset]:
                     hour_time = (next_occurrence.hour + (next_occurrence.minute / 60)) % 12
@@ -183,12 +206,22 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                         else:
                             target_timezones.append(f'\u200b    {flag}  {as_target.strftime("%I:%M %p")} {as_target.tzname()}')
 
+                    tags: typing.List[str] = []
+
+                    for tag in event.tags:
+                        tag_header, _tag_content = tag.split(":")
+
+                        if tag in TAG_DESCRIPTIONS_EN and tag_header in TAG_HEADINGS_EN:
+                            tags.append(f"{TAG_HEADING_EMOJIS.get(tag_header, DEFAULT_TAG_HEADING_EMOJI)} **{TAG_HEADINGS_EN[tag_header]}**: {TAG_DESCRIPTIONS_EN[tag]}")
+
+                    tag_line = "-# " + " \N{KATAKANA MIDDLE DOT} ".join(tags) + "\n" if tags else ""
+
                     description_parts.append(
                         f"**{event.name}** with {event.host}\n"
-                        f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')}\n"
+                        f"{tag_line}"
+                        f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')} ({discord.utils.format_dt(next_occurrence, 'R')})\n"
                         f"{'\n'.join(target_timezones)}"
                     )
-
             else:
                 description_parts.append("-# -- No events this day. --")
 
@@ -200,17 +233,25 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
             weekday_embeds.append(embed)
 
         # If a message exists update it
-        if event_lane.webhook_message_id:
-            message = event_lane.webhook.edit_message(
-                message_id=event_lane.webhook_message_id,
-                embeds=weekday_embeds,
-            )
-        else:
-            message = event_lane.webhook.send(
-                embeds=weekday_embeds,
-                wait=True,
-            )
+        message: typing.Optional[discord.Message] = None
+        if event_lane.webhook:
+            if event_lane.webhook_message_id:
+                message = event_lane.webhook.edit_message(
+                    message_id=event_lane.webhook_message_id,
+                    embeds=weekday_embeds,
+                )
+            else:
+                message = event_lane.webhook.send(
+                    embeds=weekday_embeds,
+                    wait=True,
+                )
 
-        lane_messages[event_lane.name] = message.id
+        lane_messages[event_lane.name] = {
+            "message_id": message.id if message else None,
+            "embeds": [
+                embed.to_dict()
+                for embed in weekday_embeds
+            ]
+        }
 
     return lane_messages

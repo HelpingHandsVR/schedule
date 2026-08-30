@@ -1,0 +1,36 @@
+{% extends "base.jinja2" %}
+{% block head_attributes %}lang="ja"{% endblock %}
+
+{% block content %}
+<h1>Helping Hands スケジュール ({{ generation_time }} に生成済み)</h1>
+<p>
+    このページは主に開発者用です。
+    より詳しいイベント詳細は、 <a href="https://helpinghands.gg/events">サイト</a> または <a href="https://discord.gg/helpinghands">Discord</a> をご確認くださいませ。
+</p>
+<hr>
+<ul>
+    {%- for event in manifest %}
+    <li>
+        <span class="material-icons">alarm</span>
+        <div class="event-content">
+            <span><b>{{ event.event_name }}</b></span>
+            <span> 担当者  {{ event.presenter }}</span>
+            <span><i> <a href="https://github.com/HelpingHandsVR/schedule/blob/main/templates/{{ event.event_lane }}/events.yaml#L{{ event.line_number }}" target="_blank">{{ event.event_lane }}</a>内で定義</i></span>
+
+            {%- for timezone in event.timezones %}
+            <p>{{ timezone }}</p>
+            {%- endfor %}
+        </div>
+    </li>
+    {%- endfor %}
+</ul>
+<hr>
+<h2>他の使用可能な形式</h2>
+<ul>
+    {%- for format in output_formats %}
+    <li>
+        <a href="{{ format[1] }}">{{ format[1] }}</a>
+    </li>
+    {%- endfor %}
+</ul>
+{% endblock %}

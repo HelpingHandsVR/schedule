@@ -3,28 +3,25 @@
 events:
   # Tuesday
   - host: XKaijo
-    name: "LSF Basic Class"
-    tags: ["class", "beginners"]
+    name: "LSF Class"
+    tags:
+      - event:class
+      - platform:vrchat
+      - audience:beginners
+      - language:lsf
     schedule:
       basis: "2025-03-11"
       day: Tuesday
       hour: 21
       minute: 30
 
-  # Wednesday
-  - host: XKaijo
-    name: "LSF Class"
-    tags: ["class"]
-    schedule:
-      basis: "2025-03-12"
-      day: Wednesday
-      hour: 21
-      minute: 30
-
   # Friday
   - host: XKaijo
     name: "LSF Class"
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:lsf
     schedule:
       basis: "2025-03-14"
       day: Friday
@@ -34,7 +31,10 @@ events:
   # Sunday
   - host: XKaijo
     name: "LSF Game Night"
-    tags: ["game_night"]
+    tags:
+      - event:game_night
+      - platform:vrchat
+      - language:lsf
     schedule:
       basis: "2025-03-09"
       day: Sunday
