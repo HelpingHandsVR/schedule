@@ -38,7 +38,7 @@ WEEKNAMES = {"en": WEEKNAMES_EN, "ja": WEEKNAMES_JA}
 
 def generate_html(event_lanes: list[EventLane], language: str = "en") -> str:
     now = datetime.datetime.now(datetime.UTC)
-    manifest: typing.List[typing.Tuple[typing.Dict[str, typing.Any], int]] = []
+    manifest: list[tuple[dict[str, typing.Any], int]] = []
 
     template = JINJA_ENVIRONMENT.get_template(f"html_template.{language}.jinja2")
 

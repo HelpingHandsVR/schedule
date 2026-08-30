@@ -88,7 +88,7 @@ def format_event_ja(event: EventLaneEvent) -> str:
 
 def generate_textmeshpro_text(event_lanes: list[EventLane], language: str = "en") -> str:
     now = datetime.datetime.now(datetime.UTC)
-    manifest: typing.List[typing.Tuple[str, int]] = []
+    manifest: list[tuple[str, int]] = []
 
     for event_lane in event_lanes:
         for event in event_lane.events:
@@ -143,7 +143,7 @@ EVENT_TEXT_SPECIAL = """
 
 def generate_textmeshpro_special(event_lanes: list[EventLane]) -> str:
     now = datetime.datetime.now(datetime.UTC)
-    manifest: typing.List[typing.Tuple[str, int]] = []
+    manifest: list[tuple[str, int]] = []
 
     for event_lane in event_lanes:
         for event in event_lane.events:

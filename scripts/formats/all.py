@@ -10,7 +10,7 @@ from formats.textmeshpro import generate_textmeshpro_special, generate_textmeshp
 from formats.webhook import send_webhooks
 
 
-__all__: typing.List[str] = [
+__all__: list[str] = [
     "OUTPUT_FORMATS"
 ]
 

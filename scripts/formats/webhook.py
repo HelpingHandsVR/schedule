@@ -86,7 +86,7 @@ TIMEZONE_PAIRS = (
 
 DEFAULT_TAG_HEADING_EMOJI: str = "\N{INFORMATION SOURCE}"
 
-TAG_HEADING_EMOJIS: typing.Dict[str, str] = {
+TAG_HEADING_EMOJIS: dict[str, str] = {
     "event": "\N{TEAR-OFF CALENDAR}",
     "platform": "\N{PERSONAL COMPUTER}",
     "audience": "\N{BUSTS IN SILHOUETTE}",
@@ -94,7 +94,7 @@ TAG_HEADING_EMOJIS: typing.Dict[str, str] = {
     "vr": "\N{GOGGLES}"
 }
 
-TAG_HEADINGS_EN: typing.Dict[str, str] = {
+TAG_HEADINGS_EN: dict[str, str] = {
     "event": "Event",
     "platform": "Platform",
     "audience": "Audience",
@@ -102,7 +102,7 @@ TAG_HEADINGS_EN: typing.Dict[str, str] = {
     "vr": "VR",
 }
 
-TAG_DESCRIPTIONS_EN: typing.Dict[str, str] = {
+TAG_DESCRIPTIONS_EN: dict[str, str] = {
     "audience:beginners": "Beginners",
     "platform:discord": "Discord",
     "platform:vrchat": "VRChat",
@@ -209,7 +209,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                         else:
                             target_timezones.append(f'\u200b    {flag}  {as_target.strftime("%I:%M %p")} {as_target.tzname()}')
 
-                    tags: typing.List[str] = []
+                    tags: list[str] = []
 
                     for tag in event.tags:
                         tag_header, _tag_content = tag.split(":")
@@ -230,11 +230,11 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                 
             weekday_color = discord.Color.from_hsv(weekday_offset / 7.0, 1.0, 1.0)
             
-            embeds_for_this_weekday: typing.List[discord.Embed] = []
-            content_for_this_embed: typing.List[str] = []
+            embeds_for_this_weekday: list[discord.Embed] = []
+            content_for_this_embed: list[str] = []
             
             for description_part in description_parts:
-                if len(title + "\n\n") + len("\n\n".join(content_for_this_embed)) + len("\n\n" + description_part) > 5990:
+                if len(title + "\n\n") + len("\n\n".join(content_for_this_embed)) + len("\n\n" + description_part) > 1990:
                     # If adding this part would result in too large of embed, finalise the current embed and start a new one
                     embeds_for_this_weekday.append(
                         discord.Embed(
