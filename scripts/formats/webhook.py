@@ -197,6 +197,9 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                 for (event, next_occurrence) in events_by_day[weekday_offset]:
                     hour_time = (next_occurrence.hour + (next_occurrence.minute / 60)) % 12
                     emoji = min(CLOCK_EMOJIS, key=lambda pair: abs(pair[0] - hour_time))[1]
+                    
+                    link = f"https://github.com/HelpingHandsVR/schedule/blob/main/templates/{event.event_lane}/events.yaml#L{event.defined_line}"
+                    masked_link = f"[\N{BRAILLE PATTERN BLANK}](<{link}>)"
 
                     target_timezones = []
 
@@ -222,7 +225,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                     description_parts.append(
                         f"**{event.name}** with {event.host}\n"
                         f"{tag_line}"
-                        f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')} ({discord.utils.format_dt(next_occurrence, 'R')})\n"
+                        f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')} ({discord.utils.format_dt(next_occurrence, 'R')}) {masked_link}\n"
                         f"{'\n'.join(target_timezones)}"
                     )
             else:
