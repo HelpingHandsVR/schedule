@@ -58,6 +58,7 @@ class EventLaneRawEvents(typing.TypedDict):
 
 @dataclasses.dataclass(frozen=True)
 class EventLaneEvent:
+    defined_lane: str
     defined_line: int
     host: str
     name: str
@@ -69,14 +70,14 @@ class EventLaneEvent:
     not_before: datetime.date | None
     not_after: datetime.date | None
 
-    def get_tag_group(self, tag_group: str) -> typing.Optional[str]:
+    def get_tag_group(self, tag_group: str) -> str | None:
         for tag in self.tags:
             group, content = tag.split(":")
 
             if group == tag_group:
                 return content
 
-    def next_occurrence_after(self, target: datetime.datetime) -> typing.Optional[datetime.datetime]:
+    def next_occurrence_after(self, target: datetime.datetime) -> datetime.datetime | None:
         # If paused, no next occurrence
         if self.paused:
             return None

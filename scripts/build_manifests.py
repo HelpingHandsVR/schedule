@@ -106,6 +106,7 @@ def main():
                     f"Event '{raw_event['name']}' w/ {raw_event['host']} in `{event_lane_name}` has basis time of {basis:%a %d %b %Y, %I:%M%p} but claims it is a {claimed_day}"
 
                 events.append(EventLaneEvent(
+                    defined_lane=event_lane_name,
                     defined_line=raw_event['__line__'],
                     host=raw_event['host'],
                     name=raw_event['name'],
