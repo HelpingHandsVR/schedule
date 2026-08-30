@@ -12,7 +12,9 @@ from zoneinfo import ZoneInfo
 
 import discord
 from definitions import EventLane, EventLaneEvent
-from discord.types.embed import Embed as EmbedData
+
+if typing.TYPE_CHECKING:
+    from discord.types.embed import Embed as EmbedData
 
 
 def calculate_notable_date_emojis(year: int) -> dict[tuple[int, int], str]:
@@ -118,7 +120,7 @@ def to_regionals(text: str):
     
 class MessageManifest(typing.TypedDict):
     message_id: int | None
-    embeds: list[EmbedData]
+    embeds: list["EmbedData"]
     
 class LaneManifest(typing.TypedDict):
     messages: list[MessageManifest]
