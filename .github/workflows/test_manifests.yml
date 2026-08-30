@@ -1,0 +1,26 @@
+name: "Test schedule manifests"
+
+on:
+  pull_request:
+  workflow_dispatch: {}
+
+jobs:
+  test_manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python 3.14
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+
+      - name: Install requirements
+        run: |
+          pip install -U -r scripts/requirements.txt
+
+      - name: Generate manifests
+        run: |
+          python scripts/build_manifests.py
