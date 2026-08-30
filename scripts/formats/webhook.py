@@ -188,10 +188,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
             else:
                 title = f"# {emoji} {day:%A (%Y-%m-%d)}"
 
-            description_parts = [
-                title,
-            ]
-
+            description_parts = []
 
             if events_by_day[weekday_offset]:
                 for (event, next_occurrence) in events_by_day[weekday_offset]:
@@ -230,13 +227,34 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                     )
             else:
                 description_parts.append("-# -- No events this day. --")
+                
+            weekday_color = discord.Color.from_hsv(weekday_offset / 7.0, 1.0, 1.0)
+            
+            embeds_for_this_weekday: typing.List[discord.Embed] = []
+            content_for_this_embed: typing.List[str] = []
+            
+            for description_part in description_parts:
+                if len(title + "\n\n") + len("\n\n".join(content_for_this_embed)) + len("\n\n" + description_part) > 5990:
+                    # If adding this part would result in too large of embed, finalise the current embed and start a new one
+                    embeds_for_this_weekday.append(
+                        discord.Embed(
+                            color=weekday_color,
+                            description="\n\n".join(content_for_this_embed if embeds_for_this_weekday else [title] + content_for_this_embed)
+                        )
+                    )
+                    content_for_this_embed = [description_part]
+                else:
+                    content_for_this_embed.append(description_part)
+                    
+            if content_for_this_embed:
+                embeds_for_this_weekday.append(
+                    discord.Embed(
+                        color=weekday_color,
+                        description="\n\n".join(content_for_this_embed if embeds_for_this_weekday else [title] + content_for_this_embed)
+                    )
+                )
 
-            embed = discord.Embed(
-                color=discord.Color.from_hsv(weekday_offset / 7.0, 1.0, 1.0),
-                description="\n\n".join(description_parts)
-            )
-
-            weekday_embeds.append(embed)
+            weekday_embeds.extend(embeds_for_this_weekday)
 
         # If a message exists update it
         message: typing.Optional[discord.Message] = None
