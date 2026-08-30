@@ -106,4 +106,4 @@ class EventLane:
     events: list[EventLaneEvent]
     webhook: discord.SyncWebhook | None
     webhook_info: EventLaneWebhookInfo | None
-    webhook_message_id: int | None
+    webhook_message_ids: list[int]

@@ -11,8 +11,8 @@ import typing
 from zoneinfo import ZoneInfo
 
 import discord
-
 from definitions import EventLane, EventLaneEvent
+from discord.types.embed import Embed as EmbedData
 
 
 def calculate_notable_date_emojis(year: int) -> dict[tuple[int, int], str]:
@@ -115,10 +115,17 @@ def to_regionals(text: str):
     mapping = 0x1f1e6 - 0x61
 
     return ''.join(chr(ord(x) + mapping) for x in text.lower())
+    
+class MessageManifest(typing.TypedDict):
+    message_id: int | None
+    embeds: list[EmbedData]
+    
+class LaneManifest(typing.TypedDict):
+    messages: list[MessageManifest]
 
 
-def send_webhooks(event_lanes: list[EventLane]) -> dict:
-    lane_messages = {}
+def send_webhooks(event_lanes: list[EventLane]) -> dict[str, LaneManifest]:
+    lane_messages: dict[str, LaneManifest] = {}
 
     # Calculate for each event lane, as it changes how we calculate what counts as 'today'
     for event_lane in event_lanes:
@@ -154,8 +161,8 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
             # Add the event and its next time to the list
             events_by_day[next_occurrence.astimezone(event_lane_zone).weekday()].append((event, next_occurrence))
 
-        # One embed for each day
-        weekday_embeds = []
+        # One message for each day with possibly multiple embeds
+        weekday_embeds: list[discord.Embed] = []
 
         # If a header exists, make an embed for it
         if event_lane.webhook_info:
@@ -171,7 +178,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
 
         # Todo: add timezone shift warning
 
-        for weekday_offset in range(0, 7):
+        for weekday_offset in range(7):
             # Calculate the day
             day = last_monday_5am + datetime.timedelta(days=weekday_offset)
 
@@ -188,7 +195,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
             else:
                 title = f"# {emoji} {day:%A (%Y-%m-%d)}"
 
-            description_parts = []
+            description_parts: list[str] = []
 
             if events_by_day[weekday_offset]:
                 for (event, next_occurrence) in events_by_day[weekday_offset]:
@@ -198,7 +205,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                     link = f"https://github.com/HelpingHandsVR/schedule/blob/main/templates/{event_lane.name}/events.yaml#L{event.defined_line}"
                     masked_link = f"[\N{BRAILLE PATTERN BLANK}](<{link}>)"
 
-                    target_timezones = []
+                    target_timezones: list[str] = []
 
                     for flag, target_timezone in TIMEZONE_PAIRS:
                         as_target = next_occurrence.astimezone(target_timezone)
@@ -223,7 +230,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                         f"**{event.name}** with {event.host}\n"
                         f"{tag_line}"
                         f"\u200b    {emoji} {discord.utils.format_dt(next_occurrence, 'f')} ({discord.utils.format_dt(next_occurrence, 'R')}) {masked_link}\n"
-                        f"{'\n'.join(target_timezones)}"
+                        + '\n'.join(target_timezones)
                     )
             else:
                 description_parts.append("-# -- No events this day. --")
@@ -255,27 +262,56 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                 )
 
             weekday_embeds.extend(embeds_for_this_weekday)
+            
+        # Organize embeds into messages
+        embeds_per_message: list[list[discord.Embed]] = []
+        embeds_for_this_message: list[discord.Embed] = []
+        
+        for weekday_embed in weekday_embeds:
+            if sum(len(embed.description or "") for embed in embeds_for_this_message) + len(weekday_embed.description or "") > 5990:
+                # If the sum total length of all embeds in the message exceed the limit, make a new message
+                embeds_per_message.append(embeds_for_this_message)
+                embeds_for_this_message = [weekday_embed]
+            else:
+                embeds_for_this_message.append(weekday_embed)
+                
+        if embeds_for_this_message:
+            embeds_per_message.append(embeds_for_this_message)
 
         # If a message exists update it
-        message: typing.Optional[discord.Message] = None
+        messages: list[discord.Message] = []
+        
         if event_lane.webhook:
-            if event_lane.webhook_message_id:
-                message = event_lane.webhook.edit_message(
-                    message_id=event_lane.webhook_message_id,
-                    embeds=weekday_embeds,
-                )
-            else:
-                message = event_lane.webhook.send(
-                    embeds=weekday_embeds,
-                    wait=True,
-                )
+            for message_index, message_embeds in enumerate(embeds_per_message):
+                if len(event_lane.webhook_message_ids) > message_index:
+                    message = event_lane.webhook.edit_message(
+                        message_id=event_lane.webhook_message_ids[message_index],
+                        embeds=message_embeds,
+                    )
+                else:
+                    message = event_lane.webhook.send(
+                        embeds=message_embeds,
+                        wait=True,
+                    )
+                
+                messages.append(message)
+                
+        if event_lane.webhook and len(event_lane.webhook_message_ids) > len(messages):
+            # If we have more reserved messages than we need, edit the leftover messages to just contain an empty embed
+            for leftover_ids in range(len(messages), len(event_lane.webhook_message_ids)):
+                messages.append(event_lane.webhook.edit_message(
+                    message_id=event_lane.webhook_message_ids[leftover_ids],
+                    embeds=[discord.Embed()],
+                ))
 
         lane_messages[event_lane.name] = {
-            "message_id": message.id if message else None,
-            "embeds": [
-                embed.to_dict()
-                for embed in weekday_embeds
-            ]
+            "messages": [{
+                "message_id": message.id,
+                "embeds": [
+                    embed.to_dict()
+                    for embed in embeds
+                ]
+            } for message, embeds in zip(messages, embeds_per_message)],
         }
 
     return lane_messages

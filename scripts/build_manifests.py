@@ -121,7 +121,7 @@ def main():
         with report_error("    Resolving webhook if present"):
             webhook = None
             webhook_info = None
-            webhook_message_id = None
+            webhook_message_ids: list[int] = []
 
             webhook_info = meta_data.get('webhook', None)
 
@@ -132,15 +132,13 @@ def main():
                 if webhook_message_id_variable:
                     webhook_message_id_var = os.getenv(webhook_message_id_variable)
                     if webhook_message_id_var:
-                        webhook_message_id = int(webhook_message_id_var)
-                else:
-                    webhook_message_id = None
+                        webhook_message_ids = [int(part) for part in webhook_message_id_var.split(",")]
 
                 if webhook_url:
                     webhook = discord.SyncWebhook.from_url(webhook_url)
 
-                    if not webhook_message_id:
-                        click.secho(f"Warning: no existing webhook message ID found for {event_lane_name}", fg='yellow')
+                    if not webhook_message_ids:
+                        click.secho(f"Warning: no existing webhook message IDs found for {event_lane_name}", fg='yellow')
                 else:
                     click.secho(f"Warning: no webhook URL found for {event_lane_name}", fg='yellow')
 
@@ -150,7 +148,7 @@ def main():
             events=events,
             webhook=webhook,
             webhook_info=webhook_info,
-            webhook_message_id=webhook_message_id,
+            webhook_message_ids=webhook_message_ids,
         )
 
         event_lanes.append(event_lane)
