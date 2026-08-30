@@ -198,7 +198,7 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
                     hour_time = (next_occurrence.hour + (next_occurrence.minute / 60)) % 12
                     emoji = min(CLOCK_EMOJIS, key=lambda pair: abs(pair[0] - hour_time))[1]
                     
-                    link = f"https://github.com/HelpingHandsVR/schedule/blob/main/templates/{event.event_lane}/events.yaml#L{event.defined_line}"
+                    link = f"https://github.com/HelpingHandsVR/schedule/blob/main/templates/{event_lane.name}/events.yaml#L{event.defined_line}"
                     masked_link = f"[\N{BRAILLE PATTERN BLANK}](<{link}>)"
 
                     target_timezones = []
