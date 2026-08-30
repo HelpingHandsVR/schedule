@@ -158,7 +158,10 @@ def send_webhooks(event_lanes: list[EventLane]) -> dict:
         weekday_embeds = []
 
         # If a header exists, make an embed for it
-        header_text = event_lane.webhook_info.get('header', '')
+        if event_lane.webhook_info:
+            header_text = event_lane.webhook_info.get('header', "")
+        else:
+            header_text = ""
 
         if header_text:
             weekday_embeds.append(discord.Embed(
