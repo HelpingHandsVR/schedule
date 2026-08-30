@@ -130,7 +130,7 @@ def main():
                 webhook_message_id_variable = webhook_info.get('message_id', None)
 
                 if webhook_message_id_variable:
-                    webhook_message_id_var = os.getenv(webhook_message_id_variable)
+                    webhook_message_id_var = (os.getenv(webhook_message_id_variable) or "").strip().strip("_")
                     if webhook_message_id_var:
                         webhook_message_ids = [int(part) for part in webhook_message_id_var.split(",")]
 
