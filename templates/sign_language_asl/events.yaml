@@ -16,7 +16,10 @@ events:
 
   - host: Amarante
     name: ASL Class with Amarante
-    tags: ["class"]
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:asl
     schedule:
       basis: "2026-08-31"
       day: Monday
