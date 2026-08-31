@@ -10,12 +10,3 @@ language_info:
   native_localization: en
   localized_name:
     en: American Sign Language
-
-webhook:
-  channel: schedule
-  url: MISC_SCHEDULE_WEBHOOK_URL
-  message_id: MISC_SCHEDULE_MESSAGE_ID
-  header: |
-    # Miscellaneous Schedule
-
-    This schedule shows any miscellaneous events we do that aren't specific to any sign language.

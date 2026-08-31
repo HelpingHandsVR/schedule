@@ -17,7 +17,7 @@ events:
   # Sunday
   - host: Ruby Riftwind
     name: Game Night
-    tags:
+    tags: 
       - event:game_night
       - platform:vrchat
     schedule:
