@@ -15,8 +15,11 @@ events:
       minute: 0
 
   - host: Amarante
-    name: ASL Class with Amarante
-    tags: ["class"]
+    name: ASL Class
+    tags:
+      - event:class
+      - platform:vrchat
+      - language:asl
     schedule:
       basis: "2026-08-31"
       day: Monday
@@ -35,7 +38,7 @@ events:
       basis: "2026-03-10"
       not_before: "2026-03-10"
       day: Tuesday
-      hour: 14
+      hour: 17
       minute: 0
 
   - host: Ray_is_Deaf
@@ -49,8 +52,11 @@ events:
       basis: "2026-03-10"
       not_before: "2026-03-10"
       day: Tuesday
-      hour: 17
+      hour: 20
       minute: 0
+
+  # Wednesday
+  
 
   # Thursday
   - host: Fearlesskoolaid
@@ -65,6 +71,9 @@ events:
       day: Thursday
       hour: 20
       minute: 0
+
+  # Friday
+  
 
   # Saturday
   - host: ZadeTheCheetah
