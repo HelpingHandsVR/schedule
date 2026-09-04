@@ -1,15 +1,15 @@
 # yaml-language-server: $schema=../../schema/template_events.schema.json
 
 events:
-  # Monday
-  - host: Korea_Yujin
+  # Sunday
+  - host: GOM
     name: "KSL Class"
     tags:
       - event:class
       - platform:vrchat
       - language:ksl
     schedule:
-      basis: "2026-01-06"
-      day: Tuesday
-      hour: 5
+      basis: "2026-08-23"
+      day: Sunday
+      hour: 22
       minute: 00
