@@ -9,7 +9,7 @@ events:
       - platform:vrchat
       - language:ksl
     schedule:
-      basis: ""
+      basis: "2026-08-23"
       day: Sunday
       hour: 22
       minute: 00
