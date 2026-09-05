@@ -1,0 +1,99 @@
+<align=center><size=125%>- Helping Hands Schedule -</size></align>
+<align=center><size=125%>- Helping Hands スケジュール -</size></align>
+<align=center><size=60%>Updated/更新時間: 2026-09-05 09:05 UTC</size></align>
+
+<size=120%></size> <b>BSL Class</b><pos=70%><b>9月6日/Sep 5th</b></pos>
+             14:00 PDT   <pos=35%> 23:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             16:00 CDT   <pos=35%> 05:00 AWST  </pos><pos=70%>AvinouSCAC</pos>
+             17:00 EDT   <pos=35%> 06:00 JST  </pos>
+             22:00 BST   <pos=35%> 07:00 AEST  </pos>
+
+<size=120%></size> <b>ASL Class</b><pos=70%><b>9月6日/Sep 5th</b></pos>
+             16:30 PDT   <pos=35%> 01:30 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             18:30 CDT   <pos=35%> 07:30 AWST  </pos><pos=70%>Crow_Se7en</pos>
+             19:30 EDT   <pos=35%> 08:30 JST  </pos>
+             00:30 BST   <pos=35%> 09:30 AEST  </pos>
+
+<size=120%></size> <b>JSL Class</b><pos=70%><b>9月6日/Sep 5th</b></pos>
+             17:30 PDT   <pos=35%> 02:30 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             19:30 CDT   <pos=35%> 08:30 AWST  </pos><pos=70%>ラファエルRafael</pos>
+             20:30 EDT   <pos=35%> 09:30 JST  </pos>
+             01:30 BST   <pos=35%> 10:30 AEST  </pos>
+
+<size=120%></size> <b>IRL ASL Class</b><pos=70%><b>9月6日/Sep 5th</b></pos>
+             17:30 PDT   <pos=35%> 02:30 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             19:30 CDT   <pos=35%> 08:30 AWST  </pos><pos=70%>ZadeTheCheetah</pos>
+             20:30 EDT   <pos=35%> 09:30 JST  </pos>
+             01:30 BST   <pos=35%> 10:30 AEST  </pos>
+
+<size=120%></size> <b>KSL Class</b><pos=70%><b>9月6日/Sep 6th</b></pos>
+             06:00 PDT   <pos=35%> 15:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             08:00 CDT   <pos=35%> 21:00 AWST  </pos><pos=70%>GOM</pos>
+             09:00 EDT   <pos=35%> 22:00 JST  </pos>
+             14:00 BST   <pos=35%> 23:00 AEST  </pos>
+
+<size=120%></size> <b>Game Night</b><pos=70%><b>9月7日/Sep 6th</b></pos>
+             12:00 PDT   <pos=35%> 21:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             14:00 CDT   <pos=35%> 03:00 AWST  </pos><pos=70%>Ruby Riftwind</pos>
+             15:00 EDT   <pos=35%> 04:00 JST  </pos>
+             20:00 BST   <pos=35%> 05:00 AEST  </pos>
+
+<size=120%></size> <b>LSF Game Night</b><pos=70%><b>9月7日/Sep 6th</b></pos>
+             12:30 PDT   <pos=35%> 21:30 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             14:30 CDT   <pos=35%> 03:30 AWST  </pos><pos=70%>XKaijo</pos>
+             15:30 EDT   <pos=35%> 04:30 JST  </pos>
+             20:30 BST   <pos=35%> 05:30 AEST  </pos>
+
+<size=120%></size> <b>ASL Class</b><pos=70%><b>9月8日/Sep 7th</b></pos>
+             13:00 PDT   <pos=35%> 22:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             15:00 CDT   <pos=35%> 04:00 AWST  </pos><pos=70%>Amarante</pos>
+             16:00 EDT   <pos=35%> 05:00 JST  </pos>
+             21:00 BST   <pos=35%> 06:00 AEST  </pos>
+
+<size=120%></size> <b>ASL Sign Zone</b><pos=70%><b>9月8日/Sep 7th</b></pos>
+             14:00 PDT   <pos=35%> 23:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             16:00 CDT   <pos=35%> 05:00 AWST  </pos><pos=70%>Amarante</pos>
+             17:00 EDT   <pos=35%> 06:00 JST  </pos>
+             22:00 BST   <pos=35%> 07:00 AEST  </pos>
+
+<size=120%></size> <b>LSF Class</b><pos=70%><b>9月9日/Sep 8th</b></pos>
+             12:30 PDT   <pos=35%> 21:30 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             14:30 CDT   <pos=35%> 03:30 AWST  </pos><pos=70%>XKaijo</pos>
+             15:30 EDT   <pos=35%> 04:30 JST  </pos>
+             20:30 BST   <pos=35%> 05:30 AEST  </pos>
+
+<size=120%></size> <b>ASL Class</b><pos=70%><b>9月9日/Sep 8th</b></pos>
+             14:00 PDT   <pos=35%> 23:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             16:00 CDT   <pos=35%> 05:00 AWST  </pos><pos=70%>Ray_is_Deaf</pos>
+             17:00 EDT   <pos=35%> 06:00 JST  </pos>
+             22:00 BST   <pos=35%> 07:00 AEST  </pos>
+
+<size=120%></size> <b>ASL Class</b><pos=70%><b>9月9日/Sep 8th</b></pos>
+             17:00 PDT   <pos=35%> 02:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             19:00 CDT   <pos=35%> 08:00 AWST  </pos><pos=70%>Ray_is_Deaf</pos>
+             20:00 EDT   <pos=35%> 09:00 JST  </pos>
+             01:00 BST   <pos=35%> 10:00 AEST  </pos>
+
+<size=120%></size> <b>ASL Sign Zone</b><pos=70%><b>9月11日/Sep 10th</b></pos>
+             18:00 PDT   <pos=35%> 03:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             20:00 CDT   <pos=35%> 09:00 AWST  </pos><pos=70%>Fearlesskoolaid</pos>
+             21:00 EDT   <pos=35%> 10:00 JST  </pos>
+             02:00 BST   <pos=35%> 11:00 AEST  </pos>
+
+<size=120%></size> <b>LSF Class</b><pos=70%><b>9月12日/Sep 11th</b></pos>
+             12:30 PDT   <pos=35%> 21:30 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             14:30 CDT   <pos=35%> 03:30 AWST  </pos><pos=70%>XKaijo</pos>
+             15:30 EDT   <pos=35%> 04:30 JST  </pos>
+             20:30 BST   <pos=35%> 05:30 AEST  </pos>
+
+<size=120%></size> <b>ASL Sign Zone</b><pos=70%><b>9月12日/Sep 11th</b></pos>
+             17:00 PDT   <pos=35%> 02:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             19:00 CDT   <pos=35%> 08:00 AWST  </pos><pos=70%>Undeadsee</pos>
+             20:00 EDT   <pos=35%> 09:00 JST  </pos>
+             01:00 BST   <pos=35%> 10:00 AEST  </pos>
+
+<size=120%></size> <b>Game Night</b><pos=70%><b>9月12日/Sep 11th</b></pos>
+             18:00 PDT   <pos=35%> 03:00 CEST  </pos><pos=70%><size=50%>担当者/Presenter: </size></pos>
+             20:00 CDT   <pos=35%> 09:00 AWST  </pos><pos=70%>Fearlesskoolaid</pos>
+             21:00 EDT   <pos=35%> 10:00 JST  </pos>
+             02:00 BST   <pos=35%> 11:00 AEST  </pos>
