@@ -1,0 +1,161 @@
+<align=center><size=125%>Helping Hands Schedule</size></align>
+
+<b>BSL Class</b> <size=70%>with AvinouSCAC</size><size=60%>
+        Saturday 15:00 PDT
+        Saturday 17:00 CDT
+        Saturday 18:00 EDT
+        Saturday 22:00 GMT
+        Saturday 23:00 CET
+        Sunday 06:00 AWST
+        Sunday 07:00 JST
+</size>
+
+<b>ASL Class</b> <size=70%>with Crow_Se7en</size><size=60%>
+        Saturday 16:30 PDT
+        Saturday 18:30 CDT
+        Saturday 19:30 EDT
+        Saturday 23:30 GMT
+        Sunday 00:30 CET
+        Sunday 07:30 AWST
+        Sunday 08:30 JST
+</size>
+
+<b>JSL Class</b> <size=70%>with ラファエルRafael</size><size=60%>
+        Saturday 17:30 PDT
+        Saturday 19:30 CDT
+        Saturday 20:30 EDT
+        Sunday 00:30 GMT
+        Sunday 01:30 CET
+        Sunday 08:30 AWST
+        Sunday 09:30 JST
+</size>
+
+<b>IRL ASL Class</b> <size=70%>with ZadeTheCheetah</size><size=60%>
+        Saturday 17:30 PDT
+        Saturday 19:30 CDT
+        Saturday 20:30 EDT
+        Sunday 00:30 GMT
+        Sunday 01:30 CET
+        Sunday 08:30 AWST
+        Sunday 09:30 JST
+</size>
+
+<b>KSL Class</b> <size=70%>with GOM</size><size=60%>
+        Sunday 05:00 PST
+        Sunday 07:00 CST
+        Sunday 08:00 EST
+        Sunday 13:00 GMT
+        Sunday 14:00 CET
+        Sunday 21:00 AWST
+        Sunday 22:00 JST
+</size>
+
+<b>Game Night</b> <size=70%>with Ruby Riftwind</size><size=60%>
+        Sunday 12:00 PST
+        Sunday 14:00 CST
+        Sunday 15:00 EST
+        Sunday 20:00 GMT
+        Sunday 21:00 CET
+        Monday 04:00 AWST
+        Monday 05:00 JST
+</size>
+
+<b>LSF Game Night</b> <size=70%>with XKaijo</size><size=60%>
+        Sunday 12:30 PST
+        Sunday 14:30 CST
+        Sunday 15:30 EST
+        Sunday 20:30 GMT
+        Sunday 21:30 CET
+        Monday 04:30 AWST
+        Monday 05:30 JST
+</size>
+
+<b>ASL Class</b> <size=70%>with Amarante</size><size=60%>
+        Monday 13:00 PST
+        Monday 15:00 CST
+        Monday 16:00 EST
+        Monday 21:00 GMT
+        Monday 22:00 CET
+        Tuesday 05:00 AWST
+        Tuesday 06:00 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>with Amarante</size><size=60%>
+        Monday 14:00 PST
+        Monday 16:00 CST
+        Monday 17:00 EST
+        Monday 22:00 GMT
+        Monday 23:00 CET
+        Tuesday 06:00 AWST
+        Tuesday 07:00 JST
+</size>
+
+<b>LSF Class</b> <size=70%>with XKaijo</size><size=60%>
+        Tuesday 12:30 PST
+        Tuesday 14:30 CST
+        Tuesday 15:30 EST
+        Tuesday 20:30 GMT
+        Tuesday 21:30 CET
+        Wednesday 04:30 AWST
+        Wednesday 05:30 JST
+</size>
+
+<b>ASL Class</b> <size=70%>with Ray_is_Deaf</size><size=60%>
+        Tuesday 14:00 PST
+        Tuesday 16:00 CST
+        Tuesday 17:00 EST
+        Tuesday 22:00 GMT
+        Tuesday 23:00 CET
+        Wednesday 06:00 AWST
+        Wednesday 07:00 JST
+</size>
+
+<b>ASL Class</b> <size=70%>with Ray_is_Deaf</size><size=60%>
+        Tuesday 17:00 PST
+        Tuesday 19:00 CST
+        Tuesday 20:00 EST
+        Wednesday 01:00 GMT
+        Wednesday 02:00 CET
+        Wednesday 09:00 AWST
+        Wednesday 10:00 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>with Fearlesskoolaid</size><size=60%>
+        Thursday 18:00 PST
+        Thursday 20:00 CST
+        Thursday 21:00 EST
+        Friday 02:00 GMT
+        Friday 03:00 CET
+        Friday 10:00 AWST
+        Friday 11:00 JST
+</size>
+
+<b>LSF Class</b> <size=70%>with XKaijo</size><size=60%>
+        Friday 12:30 PST
+        Friday 14:30 CST
+        Friday 15:30 EST
+        Friday 20:30 GMT
+        Friday 21:30 CET
+        Saturday 04:30 AWST
+        Saturday 05:30 JST
+</size>
+
+<b>ASL Sign Zone</b> <size=70%>with Undeadsee</size><size=60%>
+        Friday 16:00 PST
+        Friday 18:00 CST
+        Friday 19:00 EST
+        Saturday 00:00 GMT
+        Saturday 01:00 CET
+        Saturday 08:00 AWST
+        Saturday 09:00 JST
+</size>
+
+<b>Game Night</b> <size=70%>with Fearlesskoolaid</size><size=60%>
+        Friday 18:00 PST
+        Friday 20:00 CST
+        Friday 21:00 EST
+        Saturday 02:00 GMT
+        Saturday 03:00 CET
+        Saturday 10:00 AWST
+        Saturday 11:00 JST
+</size>
